@@ -1,0 +1,761 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>HUMANIA 2.1 · Casos</title><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#304b43"><meta name="description" content="HUMANIA: personas ayudando a personas. Demostración sin datos reales."><style>*{box-sizing:border-box}body{margin:0;background:#f6f2e9;color:#304b43;font:16px system-ui}main{max-width:520px;margin:auto;padding:22px 20px 110px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.brand{font-size:30px;font-weight:800;letter-spacing:-2px}small{color:#52665e}h1{font-size:32px;line-height:1.12;letter-spacing:-1.2px}h2{font-size:21px}p{line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:15px;padding:15px;background:#304b43;color:white;font-weight:650;text-align:left}button.secondary{background:#e5d8c5;color:#304b43}button.light{background:white;color:#304b43;border:1px solid #ddd}button:focus-visible{outline:3px solid #528575} .hero{background:#304b43;color:#fff;border-radius:28px;padding:25px;position:relative;overflow:hidden}.hero p{color:#e6e9df}.hero button{background:#dcc9ad;color:#304b43}.hero svg{width:100%;height:100px}.card{background:#fffdf8;border:1px solid #e4dfd4;border-radius:22px;padding:19px;margin:12px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid button{min-height:105px}.stack{display:grid;gap:12px}.pill{display:inline-block;background:#e4ede5;border-radius:20px;padding:6px 10px;font-size:12px;font-weight:700}.avatar{width:58px;height:58px;border-radius:50%;background:#dcc9ad;display:grid;place-items:center;font-size:24px;font-weight:700;flex-shrink:0}.person{display:flex;gap:14px;align-items:center}.person h3{margin:0}.person p{margin:4px 0}.nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,520px);background:#fffdf8;border-top:1px solid #dedbd1;display:flex;justify-content:space-around;padding:10px 3px max(12px,env(safe-area-inset-bottom));z-index:2}.nav button{background:transparent;color:#304b43;font-size:12px;text-align:center;padding:8px}.nav b{display:block;font-size:22px}.nav .active{background:#e4ede5}label{display:block;font-weight:650;margin:15px 0 7px}input,select,textarea{width:100%;padding:13px;border:1px solid #b8c5bd;border-radius:12px;background:white;color:#304b43}textarea{min-height:95px}.notice{background:#efe2cd;padding:15px;border-radius:14px;font-size:14px}.wide{width:100%;margin-top:12px}.muted{font-size:13px;color:#52665e}.back{background:transparent;color:#304b43;padding:0}.progress{height:6px;background:#dedbd1;border-radius:8px;margin:15px 0}.progress i{display:block;background:#528575;height:100%;border-radius:8px}a{color:#304b43}.rolebar{margin-bottom:18px}.roles{grid-template-columns:repeat(3,1fr);gap:5px}.roles button{min-height:0;padding:10px 4px;text-align:center;font-size:12px}.metrics .card{margin:0}.rolebar small{display:block;margin-bottom:8px}button:disabled{opacity:.45;cursor:not-allowed}input[type=checkbox]{width:auto}input[type=number]{width:100%} @media(max-width:380px){main{padding-left:12px;padding-right:12px}.roles button{padding:8px;font-size:12px}} .portrait{width:72px;height:72px;flex-shrink:0}.community-person{display:flex;gap:14px;align-items:center}.tier1{background:#ead0b8}.tier2{background:#e1e5e8}.tier3{background:#f1dfa5}.tier4{background:#d0e7ef}.starrow{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:8px 0}.star{padding:5px;background:transparent;color:#999;font-size:22px}.star.on{color:#a87912}button:disabled{opacity:.55;cursor:default}.welcome7{background:#e4ede5}.bubble{background:#e4ede5;border-radius:14px;padding:12px}input[type=date],input[type=time]{max-width:100%;min-width:0}button:disabled{opacity:.5}.nav{padding-bottom:env(safe-area-inset-bottom,0px)}.identity15 h2{margin:12px 0 6px}.identity15 p{margin:0 0 14px}.home14 .wide{margin-top:12px;background:#dcc9ad;color:#304b43}.sos-link{display:block;padding:14px;border-radius:12px;background:#304b43;color:#fff;font-weight:650}.sos-link:focus-visible{outline:3px solid #528575;outline-offset:2px}
+.home-feed{max-width:540px;margin:auto}
+.home-shortcuts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 16px}
+.home-shortcuts button{padding:10px 12px;font-size:14px;min-height:44px}
+.home-start{margin:0 0 14px;padding:18px;border-radius:18px;background:#e4ede5}.home-start h1{margin:0;font-size:26px}.home-start p{margin:8px 0 0}.case-options{padding:4px 12px 10px}
+.home-more{margin-top:16px}.home-support{grid-column:1/-1}.support-request{overflow-wrap:anywhere}.support-request p{white-space:pre-wrap}#support-hint:empty,#support-status:empty{margin:0}
+.community-feed{max-width:540px;margin:auto}
+.feed-intro{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.feed-intro h1{margin:8px 0}
+.feed-intro button{padding:10px 13px;font-size:14px}
+.feed-post{margin:14px 0}
+.feed-author{display:flex;align-items:center;gap:10px}
+.feed-author small{display:block;margin-top:2px}
+.feed-avatar{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#e4ede5;font-weight:800}
+.feed-post h2{margin:15px 0 6px}
+.feed-post p{margin:0 0 14px}
+.feed-actions{border-top:1px solid #e4dfd4;padding-top:8px}
+.feed-reaction{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;background:transparent;color:#304b43}
+.feed-reaction span{font-size:20px;line-height:1}
+.feed-reaction[aria-pressed="true"]{background:#e4ede5}
+.nav[hidden]{display:none!important}</style>
+<style>.purpose8{background:#304b43;color:#fff;border-radius:26px;padding:24px;margin:16px 0}.purpose8 small,.purpose8 p{color:#e5dfd1}.purpose8 button{background:#dcc9ad;color:#304b43}.purpose8 h2{font-size:26px}.purpose8 svg{width:100%;height:110px}.cause8{border-left:4px solid #528575}.purpose8 .big8{font-size:48px;font-weight:800;color:#dcc9ad;margin:0}</style>
+<style>.manifest9{overflow:hidden;border-radius:26px;background:#304b43;color:#fff;margin:16px 0 24px;box-shadow:0 12px 30px #304b4320}.manifest9 article{padding:25px}.manifest9 h1{font-size:clamp(28px,7vw,42px);line-height:1.08;margin:12px 0}.manifest9 p{line-height:1.65}.manifest9 small{color:#dcc9ad;letter-spacing:1.5px}.manifest9 button{background:#dcc9ad;color:#304b43}.manifest9 .outline9{background:transparent;border:1px solid #dcc9ad;color:#fff}.scene9{display:block;width:100%;height:auto;background:#dcc9ad}.story9{background:#fffaf1;border-radius:24px;padding:22px;margin:16px 0}.story9 p{line-height:1.7}.story9 h2{font-size:27px}.pledge9{background:#304b43;color:#fff;padding:24px;border-radius:22px}.pledge9 strong{font-size:64px;color:#dcc9ad}.story9[hidden]{display:none}.story9 .scene9{border-radius:16px}.story9 .quote9{border-left:4px solid #528575;padding-left:16px;font-size:21px;font-weight:700}@media(prefers-reduced-motion:no-preference){.manifest9{animation:enter9 .45s ease-out}@keyframes enter9{from{opacity:.6;transform:translateY(6px)}to{opacity:1;transform:none}}}</style><style>main{max-width:680px;padding:18px 18px calc(110px + env(safe-area-inset-bottom))}header{margin-bottom:18px}.nav{padding-bottom:env(safe-area-inset-bottom)}.nav button{font-size:12px;min-width:0}.home14{background:#304b43;color:white;border-radius:26px;padding:24px}.home14 h1{margin:12px 0;font-size:clamp(29px,7vw,40px)}.home14 svg{width:100%;height:100px}.action14{display:block;width:100%;margin:12px 0;padding:20px;background:#528575}.action14 small{display:block;color:inherit;font-weight:400;margin-top:6px}.action14.secondary{background:#dcc9ad}.action14.light{background:#fffdf8}.menu14{display:grid;gap:10px}.menu14 button{width:100%;min-height:54px}.section14{margin:12px 0;border:1px solid #ded8ca;border-radius:18px;background:#fffdf8;padding:14px}.section14 summary{cursor:pointer;font-weight:700;padding:8px;line-height:1.4}.section14 .card{border:0;padding:10px;margin:5px 0}.rolebar{display:none!important}button:disabled{opacity:.5}.nav button.active{font-weight:800} @media(max-width:360px){main{padding-left:12px;padding-right:12px}.grid{grid-template-columns:1fr}}</style><style>.webdemo16{font-size:13px;line-height:1.45;background:#efe2cd;border-radius:12px;padding:12px;margin-bottom:16px}main{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px));overflow-wrap:anywhere}.nav{padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));width:100%;max-width:520px}.nav button{min-height:48px;min-width:0;flex:1}input,select,textarea{font-size:16px}img,svg{max-width:100%}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}</style><main><header><div><div class="brand">humania<span style="color:#528575">.</span></div><small>Personas ayudando a personas.</small></div><span class="pill">DEMO 2.1</span></header><section id="account-access" hidden><aside class="webdemo16" role="note"><strong>Prueba técnica · casos ficticios</strong><br>La autenticación y el perfil de prueba usan Supabase. Usa un correo de prueba y una contraseña exclusiva. No ingreses historias, documentos ni otros datos personales reales. Los casos son locales y no están vinculados a la cuenta.</aside><details class="card" id="auth17"><summary><strong>Mi cuenta · prueba real</strong></summary><p id="authstatus17" role="status" aria-live="polite">Cargando servicio de cuentas…</p><form id="authform17"><label for="email17">Correo de prueba</label><input id="email17" name="email" type="email" autocomplete="email" required><label for="password17">Contraseña exclusiva de prueba (mínimo 8 caracteres)</label><input id="password17" name="password" type="password" minlength="8" required><div class="stack" style="margin-top:12px"><button type="submit" value="signin">Iniciar sesión</button><button type="submit" value="signup" class="secondary">Crear cuenta</button></div></form><button id="logout17" type="button" hidden>Cerrar sesión</button></details></section><div id="app"></div></main><nav class="nav" id="nav"></nav><script>
+const app=document.querySelector('#app'), key='humania-demo-v07'; let cases=[], storage=true;try{cases=JSON.parse(localStorage.getItem(key)||'[]');if(!Array.isArray(cases))cases=[]}catch(e){storage=false}let page='home',draft={},active=null,selected=0,filter='Todos',origin='people';
+const cats=['Pareja','Familia','Amistad','Convivencia','Otro'], questions={Pareja:['Comunicación','Crianza','Tiempo en pareja','Confianza'],Familia:['Crianza','Límites','Responsabilidades','Comunicación'],Amistad:['Confianza','Límites','Distancia','Comunicación'],Convivencia:['Responsabilidades','Descanso','Dinero','Límites'],Otro:['Comunicación','Límites','Otro']};
+const people=[{n:'Clara M.',t:'Profesional',s:'Psicología · relaciones familiares',e:'8 años de experiencia',r:4.9,i:'CM',cat:['Pareja','Familia'],topics:['Crianza','Comunicación'],level:'Avanzado',reviews:42,available:true},{n:'Diego R.',t:'Experiencia vivida',s:'Convivencia y crianza',e:'Formación en escucha activa',r:4.8,i:'DR',cat:['Convivencia','Familia','Pareja'],topics:['Responsabilidades','Crianza','Descanso'],level:'Intermedio',reviews:28,available:true},{n:'Elena P.',t:'Profesional',s:'Psicología · comunicación interpersonal',e:'6 años de experiencia',r:4.9,i:'EP',cat:['Amistad','Pareja','Otro'],topics:['Comunicación','Confianza','Límites'],level:'Avanzado',reviews:36,available:true}];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function save(){try{localStorage.setItem(key,JSON.stringify(cases));storage=true}catch(e){storage=false}}function go(p){page=p;if(p!=='advisor'&&p!=='admin')role='user';render();window.scrollTo(0,0)}function start(m){active=null;draft={privacy:'anonymous',mode:m,category:'Pareja',topic:'Comunicación',complex:'Cotidiano',context:'No aplica',goal:'Comprender otras perspectivas'};go('case')}function btn(t,p,c=''){return `<button class="wide ${c}" onclick="go('${p}')">${t}</button>`}function back(p){return `<button class="back" onclick="go('${p}')">← Volver</button>`}function opts(a,v){return a.map(x=>`<option ${x===v?'selected':''}>${esc(x)}</option>`).join('')}function field(label,k,a){return `<label>${label}</label><select onchange="draft.${k}=this.value">${opts(a,draft[k])}</select>`}function progress(n){return `<div class="progress"><i style="width:${n*25}%"></i></div><small>Paso ${n} de 4</small>`}function create(status){if(!verified10)return null;let c={...draft,id:Date.now(),status,second:false,advisor:null,rating:0};cases.push(c);active=c.id;save();return c}function current(){return cases.find(c=>c.id===active)}function score(p,c){return (p.cat.includes(c.category)?35:0)+(p.t==='Profesional'?25:18)+(p.r/5*20)+(p.topics.includes(c.topic)?10:0)+(p.available?10:0)}function eligible(p,c){return approved(people.indexOf(p)) && (c.complex!=='Complejo'||p.t==='Profesional')}function profiles(c){return people.map((p,i)=>({p,i})).filter(({p,i})=>c?eligible(p,c):approved(i)&&(filter==='Todos'||p.t===filter)).sort((a,b)=>c?score(b.p,c)-score(a.p,c):0).map(({p,i})=>`<div class="card"><div class="person"><div class="avatar">${p.i}</div><div><span class="pill">${p.t}</span><h3>${p.n}</h3><p>${p.s}</p></div></div><p>${p.e} · ★ ${p.r} (${p.reviews} valoraciones ficticias)</p><span class="pill">${p.level}</span> ${c?`<span class="pill">${Math.round(score(p,c))}/100 afinidad demo</span>`:''}<p class="muted">Identidad y credenciales simuladas, no verificadas realmente.</p><button class="wide light" onclick="selected=${i};origin=page;go('profile')">Conocer perfil →</button></div>`).join('')}
+function selectAdvisor(){let c=current();if(!c||c.risk!=='no'||(c.mode==='compartida'&&!c.second)||!eligible(people[selected],c))return; c.advisor=selected;c.status='Asignado';save();go('detail')}function openCase(id){active=id;go('detail')}function second(){let c=current();if(c&&c.status==='Esperando segunda versión'&&c.risk==='no'&&c.consent===true&&c.secondTopic){c.second=true;c.status='Listo para elegir';save();go('detail')}}function decline(){let c=current();if(c&&c.status==='Esperando segunda versión'){c.mode='individual';c.status='Listo para elegir';save();go('detail')}}function deliver(){go('advisor')}function rate(n){let c=current();if(c&&c.status==='Orientación demo recibida'){c.rating=n;save();render()}}function reset(){if(confirm('¿Eliminar todos los casos ficticios de este dispositivo?')){cases=[];active=null;save();go('cases')}}
+function violenceHelp(blockedCase) {
+  return back('home') + `
+    <h1>${blockedCase ? 'Primero, tu seguridad' : 'SOS · Violencia contra las mujeres'}</h1>
+    ${blockedCase ? '<p class="notice">El caso se detuvo antes de crear una invitación. Aquí puedes consultar opciones de ayuda sin avisar a la otra persona.</p>' : ''}
+    <p>Canales oficiales de ayuda en Chile. Puedes consultarlos sin cuenta ni formulario.</p>
+    <section class="card">
+      <h2>Si estás en peligro ahora</h2>
+      <p>Carabineros atiende las 24 horas.</p>
+      <a class="sos-link" href="tel:133">Llamar al 133</a>
+    </section>
+    <section class="card">
+      <h2>Si necesitas orientación</h2>
+      <p>SernamEG ofrece orientación gratuita y confidencial todos los días de 08:00 a 00:00, incluidos los feriados.</p>
+      <div class="stack">
+        <a class="sos-link" href="tel:1455">Llamar al 1455</a>
+        <a class="sos-link" href="https://wa.me/56997007000" rel="noreferrer">Escribir a SernamEG por WhatsApp</a>
+      </div>
+    </section>
+    <p><a href="https://www.sernameg.gob.cl/sernameg-te-orienta/" rel="noreferrer">Más información en SernamEG</a></p>`;
+}
+function renderBase(){let h='',c=current();switch(page){case 'home':h=`<div class="hero"><small style="color:#dcc9ad">UN ESPACIO PARA TI</small><h1>No tienes que resolverlo todo a solas.</h1><svg viewBox="0 0 300 100"><circle cx="105" cy="30" r="22" fill="#dcc9ad"/><circle cx="195" cy="30" r="22" fill="#91b5a5"/><path d="M50 95Q55 50 105 58Q145 58 150 95M150 95Q155 58 195 58Q245 50 250 95" fill="none" stroke="#f6f2e9" stroke-width="5" stroke-linecap="round"/></svg><p>Encuentra una perspectiva humana para comprender lo que estás viviendo.</p><button onclick="start('individual')">Comenzar una orientación →</button></div><h2>¿Cómo podemos acompañarte?</h2><div class="grid"><button onclick="start('individual')">♡<br>Orientación individual</button><button class="secondary" onclick="start('compartida')">◎<br>Orientación compartida</button><button class="light" onclick="go('people')">✦<br>Conoce orientadores</button><button class="light" onclick="go('sos')">＋<br>Apoyo SOS</button></div><div class="card"><b>Escucha sin juicios</b><p>Orientaciones exclusivamente humanas. Esta versión solo simula el servicio.</p></div>`;break;
+case 'case':h=back('help14')+progress(1)+`<h1>¿Qué quieres conversar?</h1><p class="muted">Elige un tema de prueba.</p><label>Tipo de conflicto</label><select onchange="draft.category=this.value;draft.topic=questions[this.value][0];render()">${opts(cats,draft.category)}</select>`+field('¿Qué aspecto quieres comprender?','topic',questions[draft.category])+'<details class="section14 case-options" '+(draft.detailsOpen?'open':'')+' ontoggle="draft.detailsOpen=this.open"><summary>Añadir contexto (opcional)</summary>'+field(draft.category==='Pareja'?'Contexto de relación':draft.category==='Familia'?'Contexto familiar':'Contexto del caso','context',['No aplica','Convivencia','Sin convivencia','Con responsabilidades de crianza'])+field('Complejidad percibida','complex',['Cotidiano','Complejo'])+field('¿Qué buscas?','goal',['Comprender otras perspectivas','Encontrar acuerdos','Mejorar comunicación'])+'</details>'+btn('Continuar a seguridad →','safety');break;
+case 'safety':h=back('case')+progress(2)+`<h1>Tu seguridad importa</h1><p>¿Hay amenazas, agresiones, presión o miedo a represalias en este escenario?</p><div class="stack"><button onclick="draft.risk='yes';go('protect')">Sí / No estoy seguro</button><button class="light" onclick="draft.risk='no';go('confirm')">No</button></div>`;break;
+case 'protect':h=violenceHelp(true);break;
+case 'violence-sos':h=violenceHelp(false);break;
+case 'confirm':h=back('safety')+progress(3)+`<h1>${draft.mode==='compartida'?'Escuchar ambas versiones':'Tu caso está listo'}</h1><div class="card"><b>${esc(draft.category)} · ${esc(draft.topic)}</b><p>${esc(draft.goal)}</p><p>${draft.mode==='compartida'?'La segunda persona participa voluntariamente y por separado. No se emite opinión compartida sin ambas versiones.':'Selecciona un perfil compatible con tu situación.'}</p></div><button class="wide" onclick="createCloudCase(this)">${draft.mode==='compartida'?'Crear caso compartido':'Crear caso ficticio'}</button><p id="cloud-create-status" role="status"></p>`;break;
+case 'people':h=`<h1>Personas que escuchan</h1><p>Perfiles de demostración</p><select onchange="filter=this.value;render()">${opts(['Todos','Profesional','Experiencia vivida'],filter)}</select>`+profiles();break;
+case 'match':h=c?back('detail')+progress(4)+`<h1>Tu orientador compatible</h1><p>Orden de afinidad ilustrativo, no evaluación clínica.</p>`+profiles(c):btn('Ir a mis casos','cases');break;
+case 'profile':{let p=people[selected];h=back(origin)+`<div class="card"><div class="avatar">${p.i}</div><h1>${p.n}</h1><span class="pill">${p.t}</span><p>${p.s}</p><p>${p.e}</p><p>★ ${p.r} · ${p.reviews} valoraciones ficticias</p><span class="pill">Categoría ${p.level}</span><h2>Áreas de experiencia</h2><p>${p.topics.join(' · ')}</p></div><div class="notice">Perfil inventado. No hay atención real ni verificación efectiva.</div>`+(origin==='match'?`<button class="wide" onclick="selectAdvisor()">Elegir orientador</button>`:`<button class="wide" onclick="start('individual')">Iniciar un caso</button>`);break}
+case 'cases':h=`<h1>Mis casos</h1><p>Tu historial ficticio en este dispositivo.</p>${!storage?'<div class="notice">El navegador no permite guardar localmente. Los casos se perderán al cerrar.</div>':''}`+(cases.length?cases.map(c=>`<div class="card"><span class="pill">${esc(c.status)}</span><h2>${esc(c.category)} · ${esc(c.topic)}</h2><p>${esc(c.mode)}</p><button class="wide light" onclick="openCase(${Number(c.id)})">Ver seguimiento →</button></div>`).join(''):'<div class="card">Todavía no tienes casos.</div>')+btn('Volver al inicio','home');break;
+case 'detail':if(!c){h=btn('Mis casos','cases');break}h=back('cases')+`<h1>${esc(c.category)} · ${esc(c.topic)}</h1><span class="pill">${esc(c.status)}</span><div class="card"><b>Primera versión ficticia</b><p>Escenario: ${esc(c.topic)}. Objetivo: ${esc(c.goal)}.</p>${c.mode==='compartida'?`<b>Segunda versión separada</b><p>${c.second?'Versión ficticia recibida: la otra parte desea explicar su perspectiva.':'Pendiente de participación voluntaria.'}</p>`:''}</div>`;if(c.status==='Esperando segunda versión')h+=`<button class="wide" onclick="go('consent')">Abrir espacio privado de segunda persona</button><button class="wide light" onclick="decline()">Simular rechazo y continuar individualmente</button>`;if(c.status==='Listo para elegir')h+=btn('Buscar orientador compatible','match');if(c.advisor!==null)h+=`<div class="card"><b>Orientador: ${people[c.advisor].n}</b><p>Asignación ficticia</p></div>`;if(c.status==='Asignado')h+=`<button class="wide" onclick="go('advisor')">Ir al portal del orientador</button>`;if(c.status==='Orientación demo recibida')h+=`<div class="card"><span class="pill">Contenido de prueba, no orientación</span><p>Aquí aparecería la respuesta escrita por un orientador humano. No se genera una respuesta de asesoramiento.</p><h2>Valorar experiencia simulada</h2><div class="grid">${[1,2,3,4,5].map(n=>`<button class="${c.rating===n?'':'light'}" onclick="rate(${n})">${n} ★</button>`).join('')}</div><p>${c.rating?'Valoración guardada: '+c.rating+'/5':'Sin valoración'}</p></div>`;break;
+case 'sos':h=`<h1>Apoyo SOS</h1><p>Ruta gratuita prevista para dificultades relacionadas con drogas o alcohol.</p><div class="notice">Demostración sin conexión con centros. No ofrece atención de emergencia. Si existe peligro inmediato, contacta a los servicios de emergencia.</div>`+btn('Volver al inicio','home');break;
+case 'account':h=`<h1>Mi espacio</h1><div class="card"><b>Cuenta de demostración</b><p>Sin registro real. ${storage?'Guardado local disponible.':'Guardado local no disponible.'}</p><button class="wide light" onclick="reset()">Borrar casos ficticios</button></div><h2>Planes HUMANIA</h2>${['Gratuito','Premium','Premium Plus'].map((x,i)=>`<div class="card"><span class="pill">${x}</span><p>${['Orientación voluntaria limitada.','Beneficios por definir.','Experiencia ampliada por definir.'][i]}</p><small>Sin precios ni pagos reales.</small></div>`).join('')}`;break}app.innerHTML=h;document.querySelector('#nav').innerHTML=[['home','⌂','Inicio'],['people','◎','Orientadores'],['cases','▤','Mis casos'],['account','◉','Mi espacio']].map(([p,i,t])=>`<button class="${page===p?'active':''}" onclick="go('${p}')"><b>${i}</b>${t}</button>`).join('')}
+const extraKey='humania-demo-v07-ops';
+const initial=()=>({country:'Chile',plan:'Gratuito',profiles:people.map((p,i)=>({identity:true,credential:p.t==='Profesional',pledge:true,training:true,review:'Aprobado',paid:i!==1,appeal:false})),sos:[],audit:[]});
+let ops=initial(), role='user', worker=0;try{const x=JSON.parse(localStorage.getItem(extraKey));if(x&&x.profiles && x.profiles.length===people.length)ops=x}catch(e){}
+function persist(){try{localStorage.setItem(extraKey,JSON.stringify(ops))}catch(e){storage=false}}
+function log(t){ops.audit.unshift(t);persist()}
+function approved(i){const a=ops.profiles[i],p=people[i];return !!(a&&a.identity&&a.pledge&&a.training&&a.review==='Aprobado'&&(p.t!=='Profesional'||a.credential))}
+function switchRole(r){role=r;go(r==='user'?'home':r==='advisor'?'advisor':'admin')}
+function setProfile(i,k,v){if(!['identity','credential','pledge','training','paid'].includes(k))return;const a=ops.profiles[i];if(k==='paid'&&v&&(!approved(i)||people[i].t==='Experiencia vivida'&&(people[i].reviews<20||people[i].r<4.5)))return;a[k]=v;if(k!=='paid'){a.review='Pendiente';a.paid=false}log('Perfil '+people[i].n+': '+k+' actualizado');render()}
+function review(i,action){if(role!=='admin')return;const a=ops.profiles[i];if(action==='Aprobado'&&(!a.identity||!a.pledge||!a.training||(people[i].t==='Profesional'&&!a.credential)))return;if(action==='Suspendido'&&a.review!=='En revisión')return;a.review=action;a.appeal=false;if(action!=='Aprobado')a.paid=false;log(people[i].n+': '+action);render()}
+function appeal(i){if(role!=='advisor'||worker!==i||ops.profiles[i].review!=='Suspendido')return;ops.profiles[i].appeal=true;log('Solicitud de revisión: '+people[i].n);render()}
+function submitDemo(id){const c=cases.find(x=>x.id===id);if(role!=='advisor'||!c||c.advisor!==worker||!approved(worker)||c.status!=='Asignado'||c.risk!=='no'||(c.mode==='compartida'&&!c.second))return;c.status='Orientación demo recibida';save();log('Entrega de marcador de prueba: caso '+id);render()}
+function sosRequest(){ops.sos.push({id:Date.now(),status:'Solicitud ficticia'});log('SOS gratuito: solicitud simulada');render()}
+function refer(i){if(role!=='admin'||!ops.sos[i])return;ops.sos[i].status='Derivación simulada';log('SOS: derivación simulada');render()}
+function changePlan(v){ops.plan=v;log('Plan simulado: '+v);render()}
+function changeCountry(v){ops.country=v;log('País de referencia: '+v);render()}
+function toggle(i,k,label){return `<button class="wide light" onclick="setProfile(${i},'${k}',${!ops.profiles[i][k]})">${ops.profiles[i][k]?'✓':'○'} ${label}</button>`}
+function render(){renderBase();const tabs=`<div class="rolebar"><small>Entorno de prueba · roles sin autenticación</small><div class="grid roles">${[['user','Usuario'],['advisor','Orientador'],['admin','Administración']].map(([r,t])=>`<button class="${role===r?'':'light'}" onclick="switchRole('${r}')">${t}</button>`).join('')}</div></div>`;let h='';
+if(page==='advisor'){role='advisor';const a=ops.profiles[worker];h=`<h1>Portal de orientadores</h1><p>Gestiona un perfil ficticio y su bandeja de casos.</p><label>Perfil de prueba</label><select onchange="worker=Number(this.value);render()">${people.map((p,i)=>`<option value="${i}" ${i===worker?'selected':''}>${p.n}</option>`).join('')}</select><div class="card"><span class="pill">${a.review}</span><h2>Requisitos y formación</h2>${toggle(worker,'identity','Identidad simulada')}${people[worker].t==='Profesional'?toggle(worker,'credential','Credencial simulada'):''}${toggle(worker,'pledge','Compromiso de veracidad')}${trainingUI(worker)}<p>Categoría ${people[worker].level} · ★ ${people[worker].r} · ${people[worker].reviews} valoraciones ficticias</p>${toggle(worker,'paid','Modalidad remunerada')}<small>Ascenso remunerado demo: aprobación, capacitación y, para pares, 20 valoraciones y 4,5 estrellas (criterios propuestos).</small>${a.review==='Suspendido'?`<button class="wide" onclick="appeal(${worker})">Solicitar revisión</button>`:''}</div><h2>Casos asignados</h2>${cases.filter(c=>c.advisor===worker&&c.risk==='no'&&(c.mode==='individual'||c.second)).map(c=>`<div class="card"><b>${esc(c.category)} · ${esc(c.topic)}</b><p>${esc(c.status)}</p><p><b>${identity10(c)}</b></p><p>Primera versión: escenario ${esc(c.topic)}.</p>${c.second?'<p>Segunda versión ficticia recibida por separado.</p>':''}${c.status==='Asignado'&&approved(worker)?`<button class="wide" onclick="submitDemo(${c.id})">Registrar entrega de prueba</button>`:''}<small>No se redacta asesoramiento con IA.</small></div>`).join('')||'<div class="card">Sin casos asignados.</div>'}`}
+if(page==='admin'){role='admin';h=`<h1>Administración</h1><div class="grid metrics"><div class="card"><small>Casos demo</small><h2>${cases.length}</h2></div><div class="card"><small>Perfiles habilitados</small><h2>${people.filter((p,i)=>approved(i)).length}</h2></div></div><h2>Control de orientadores</h2>${people.map((p,i)=>{const a=ops.profiles[i];return `<div class="card"><b>${p.n}</b> <span class="pill">${a.review}</span><p>Identidad: ${a.identity?'sí':'no'} · Formación: ${a.training?'sí':'no'} · Compromiso: ${a.pledge?'sí':'no'}</p><p>${a.appeal?'Revisión solicitada por orientador.':''}</p><button class="wide light" onclick="review(${i},'Aprobado')">Aprobar / rehabilitar demo</button><button class="wide light" onclick="review(${i},'En revisión')">Abrir revisión por incidente ficticio</button>${a.review==='En revisión'?`<button class="wide secondary" onclick="review(${i},'Suspendido')">Simular resolución fundada y suspensión</button>`:''}<small>Proceso ilustrativo; faltan evidencias, notificación y plazos reales.</small></div>`}).join('')}<h2>Impacto social</h2><div class="card">Solicitudes SOS: ${ops.sos.length} · Derivaciones demo: ${ops.sos.filter(x=>x.status==='Derivación simulada').length}${ops.sos.map((x,i)=>`<p>${x.status}</p><button class="wide light" onclick="refer(${i})">Simular derivación especializada</button>`).join('')}<p>Donación a fundaciones: 3% de ingresos propios aprobado. Sin transferencias.</p></div><h2>Finanzas y calidad</h2><div class="card"><p>Entregas demo: ${cases.filter(c=>c.status==='Orientación demo recibida').length}</p><p>Valoraciones registradas: ${cases.filter(c=>c.rating>0).length}</p><p>Ingresos y pagos reales: $0 CLP.</p><p>Remuneración futura: ingreso neto menos costos y reserva de impacto; porcentajes pendientes.</p></div><h2>Registro local</h2><div class="card">${ops.audit.slice(0,20).map(x=>`<p>${esc(x)}</p>`).join('')||'Sin movimientos'}</div>`}
+if(page==='account')h=`<h1>Mi espacio</h1><div class="card"><label>País de referencia</label><select onchange="changeCountry(this.value)">${opts(['Chile','Argentina','Perú','Colombia','México'],ops.country)}</select><p>Chile es el mercado inicial. Los demás son opciones de simulación, no lanzamientos aprobados.</p></div><h2>Planes HUMANIA</h2>${['Gratuito','Premium','Premium Plus'].map((x,i)=>`<div class="card"><b>${x}</b><p>${['Cupos voluntarios limitados','Beneficios por definir','Beneficios ampliados por definir'][i]}</p><small>Precio ${esc(ops.country)}: pendiente. Sin cobros.</small><button class="wide ${ops.plan===x?'':'light'}" onclick="changePlan('${x}')">${ops.plan===x?'Seleccionado':'Simular selección'}</button></div>`).join('')}<button class="wide light" onclick="resetAll()">Borrar todos los datos demo</button>`;
+if(page==='sos')h=`<h1>Apoyo SOS gratuito</h1><div class="notice">Drogas o alcohol. No es atención de emergencia. Ante peligro inmediato, contacta servicios de emergencia. No hay conexión real con centros.</div><div class="card"><p>Simula una solicitud sin datos personales y su derivación desde administración.</p><button class="wide" onclick="sosRequest()">Crear solicitud SOS ficticia</button><p>Solicitudes: ${ops.sos.length}</p></div>`;
+if(page==='consent'){const c=current();h=back('detail')+`<h1>Tu versión, tu decisión</h1><div class="notice">Espacio simulado independiente. No muestra el relato de la primera persona. No hay invitación real.</div>`+(c&&c.status==='Esperando segunda versión'&&c.risk==='no'?`<div class="card"><label><input type="checkbox" ${c.consent?'checked':''} onchange="consentChange(this.checked)"> Acepto participar voluntariamente en esta demostración.</label><label>Perspectiva ficticia</label><select onchange="secondTopic(this.value)">${opts(['Seleccionar','Necesito ser escuchado','Tengo otra perspectiva','Quiero acordar responsabilidades'],c.secondTopic||'Seleccionar')}</select><button class="wide" onclick="second()" ${c.consent&&c.secondTopic?'':'disabled'}>Enviar versión ficticia</button><button class="wide light" onclick="decline()">No participar</button></div>`:btn('Volver','cases'))}
+if(page==='account')h+=`<div class="card"><h2>Perfil de demostración</h2><label>Rango de edad ficticio</label><select onchange="setDemo('age',this.value)">${opts(['Sin definir','18–29','30–44','45–59','60+'],demo.age)}</select><label>Responsabilidades de crianza</label><select onchange="setDemo('children',this.value)">${opts(['Sin definir','Sí','No'],demo.children)}</select><label>Duración de relación</label><select onchange="setDemo('duration',this.value)">${opts(['Sin definir','Menos de un año','1–5 años','Más de 5 años'],demo.duration)}</select><p>Sin identidad real ni registro de cuenta.</p></div>`;
+if(page==='admin')h+=incidentUI()+financeUI();
+if(page==='detail'&&current())h+=`<div class="card"><h2>Privacidad y calidad</h2><button class="wide light" onclick="reportCase()">Registrar incidente ficticio</button><small>Sin denuncia real ni envío externo.</small></div>`;
+if(h)app.innerHTML=h;app.insertAdjacentHTML('afterbegin',tabs);if(!storage)app.insertAdjacentHTML('afterbegin','<div class="notice">Almacenamiento local no disponible; los cambios podrían perderse.</div>');}
+function resetAll(){if(confirm('¿Borrar todos los datos ficticios de v1.0?')){cases=[];active=null;ops=initial();save();persist();go('home')}}
+const modules=['Escucha activa','Imparcialidad y límites','Privacidad','Seguridad y derivación'];
+let demo={age:'Sin definir',children:'Sin definir',duration:'Sin definir',incidents:[],modules:{},price:0,cost:0};
+try{const d=JSON.parse(localStorage.getItem('humania-v07-demo'));if(d)demo=Object.assign(demo,d)}catch(e){}
+function saveDemo(){try{localStorage.setItem('humania-v07-demo',JSON.stringify(demo))}catch(e){storage=false}}
+function setDemo(k,v){demo[k]=v;saveDemo();render()}
+function consentChange(v){const c=current();if(c&&c.status==='Esperando segunda versión'){c.consent=v;save();render()}}
+function secondTopic(v){const c=current();if(c&&c.status==='Esperando segunda versión'){c.secondTopic=v==='Seleccionar'?'':v;save();render()}}
+function trainingUI(i){const m=demo.modules[i]||modules.map(()=>!!ops.profiles[i].training);return '<h3>Formación por módulos</h3>'+modules.map((x,j)=>`<button class="wide light" onclick="moduleToggle(${i},${j})">${m[j]?'✓':'○'} ${x}</button>`).join('')+'<small>Finalización simulada, no certificación.</small>'}
+function moduleToggle(i,j){if(role!=='advisor'||worker!==i)return;const m=demo.modules[i]||modules.map(()=>!!ops.profiles[i].training);m[j]=!m[j];demo.modules[i]=m;saveDemo();setProfile(i,'training',m.every(Boolean))}
+function reportCase(){const c=current();if(!c)return;demo.incidents.push({id:Date.now(),caseId:c.id,status:'Pendiente'});saveDemo();log('Incidente ficticio registrado');render()}
+function resolveIncident(i){if(role!=='admin'||!demo.incidents[i])return;demo.incidents[i].status='Revisado en demo';saveDemo();log('Incidente revisado en demo');render()}
+function incidentUI(){return '<h2>Gestión de incidentes</h2>'+ (demo.incidents.map((x,i)=>`<div class="card">Caso ${Number(x.caseId)} · ${esc(x.status)}<button class="wide light" onclick="resolveIncident(${i})">Registrar revisión simulada</button></div>`).join('')||'<div class="card">Sin incidentes registrados.</div>')}
+function financeUI(){return `<h2>Escenario financiero</h2><div class="card"><small>Ejercicio hipotético CLP, no precios aprobados.</small><label>Ingreso por orientación</label><input type="number" min="0" value="${Number(demo.price)||0}" onchange="setDemo('price',Math.max(0,Number(this.value)||0))"><label>Costo total por orientación</label><input type="number" min="0" value="${Number(demo.cost)||0}" onchange="setDemo('cost',Math.max(0,Number(this.value)||0))"><p>Margen ilustrativo: $${(Number(demo.price)-Number(demo.cost)).toLocaleString('es-CL')} CLP</p></div>`}
+const originalReset=resetAll;resetAll=function(){originalReset();if(!cases.length){demo={age:'Sin definir',children:'Sin definir',duration:'Sin definir',incidents:[],modules:{},price:0,cost:0};saveDemo();render()}};
+
+const bios=['Acompaño conversaciones familiares desde la escucha profesional.','Padre de tres hijos; conozco los desafíos de la crianza y la convivencia.','Trabajo con comunicación interpersonal y relaciones de pareja.'];
+const levels=['Voluntario','Bronce','Plata','Oro','Diamante'];
+const thresholds=[0,50,200,500,1000];
+const stars=['Empatía','Imparcialidad','Comprensión','Utilidad','Respeto'];
+let community={availability:{},claimed:[],ratings:{},price:5000,share:80};try{let x=JSON.parse(localStorage.getItem('humania-v07-community'));if(x)community=Object.assign(community,x)}catch(e){}
+function persistCommunity(){try{localStorage.setItem('humania-v07-community',JSON.stringify(community))}catch(e){storage=false}}
+function money(n){return '$'+Math.round(n).toLocaleString('es-CL')+' CLP'}
+function reputation(i){let p=people[i],rs=cases.filter(c=>c.advisor===i&&c.rating>0),n=p.reviews+rs.length;return {n,r:(p.r*p.reviews+rs.reduce((a,c)=>a+c.rating,0))/n}}
+function tier(i){let a=ops.profiles[i],r=reputation(i);if(!approved(i)||!a.paid)return 0;let t=0;for(let j=1;j<5;j++)if(r.n>=thresholds[j]&&r.r>=[0,4.3,4.5,4.7,4.8][j]&&months13(i)>=[0,1,3,6,12][j])t=j;return t}
+function portrait(i){let colors=['#b9d2c2','#dcc9ad','#c5c8de'];return `<svg class="portrait" viewBox="0 0 80 80" aria-label="Avatar ilustrativo"><rect width="80" height="80" rx="40" fill="${colors[i]}"/><path d="M8 80 Q10 53 40 53 Q70 53 72 80" fill="#304b43"/><ellipse cx="40" cy="33" rx="17" ry="21" fill="#c58f70"/><path d="M23 32 Q17 7 40 8 Q64 8 58 34 L49 20 Q35 29 23 32" fill="#49392f"/><circle cx="34" cy="34" r="1.7"/><circle cx="46" cy="34" r="1.7"/><path d="M34 43 Q40 48 46 43" fill="none" stroke="#714d42" stroke-width="2"/></svg>`}
+function communityProfile(i){let r=reputation(i),t=tier(i);return `<div class="community-person">${portrait(i)}<div><b>${people[i].n}</b><br><span class="pill tier${t}">${levels[t]}</span> <small>★ ${r.r.toFixed(1)} · ${r.n} valoraciones demo</small></div></div><p>${bios[i]}</p><small>${community.availability[i]===false?'No disponible':'Disponible'} · ${approved(i)?'Habilitación simulada':'Pendiente de habilitación'}</small>`}
+const oldEligible=eligible;eligible=function(p,c){return oldEligible(p,c)&&community.availability[people.indexOf(p)]!==false};
+const oldProfiles=profiles;profiles=function(c){return people.map((p,i)=>({p,i})).filter(({p,i})=>c?eligible(p,c):approved(i)&&(filter==='Todos'||p.t===filter)).sort((a,b)=>c?score(b.p,c)-score(a.p,c):0).map(({p,i})=>`<div class="card">${communityProfile(i)}<p>${p.s} · ${p.t}</p>${c?`<span class="pill">${Math.round(score(p,c))}% afinidad ilustrativa</span>`:''}<button class="wide light" onclick="selected=${i};origin=page;go('profile')">Conocer perfil →</button></div>`).join('')};
+function setAvailable(){community.availability[worker]=community.availability[worker]===false;persistCommunity();render()}
+function claim(id){let c=cases.find(x=>x.id===id);if(role!=='advisor'||!c||c.status!=='Listo para elegir'||c.risk!=='no'||(c.mode==='compartida'&&!c.second)||!eligible(people[worker],c))return;let k=id+':'+worker;if(!community.claimed.includes(k))community.claimed.push(k);persistCommunity();render()}
+function setStar(j,n){let c=current();if(!c||c.status!=='Orientación demo recibida'||c.ratingSubmitted)return;let a=community.ratings[c.id]||[0,0,0,0,0];a[j]=n;community.ratings[c.id]=a;persistCommunity();render()}
+function submitStars(){let c=current(),a=c&&community.ratings[c.id];if(!c||c.status!=='Orientación demo recibida'||c.ratingSubmitted||!a||a.some(x=>x<1))return;c.rating=a.reduce((x,y)=>x+y,0)/5;c.ratingSubmitted=true;save();render()}
+function ratingPanel(c){let a=community.ratings[c.id]||[0,0,0,0,0];return `<div class="card"><h2>Tu valoración detallada</h2>${stars.map((x,j)=>`<div class="starrow"><span>${x}</span><div>${[1,2,3,4,5].map(n=>`<button aria-label="${x} ${n} estrellas" ${c.ratingSubmitted?'disabled':''} class="star ${n<=a[j]?'on':''}" onclick="setStar(${j},${n})">★</button>`).join('')}</div></div>`).join('')}<button class="wide" ${c.ratingSubmitted||a.some(x=>!x)?'disabled':''} onclick="submitStars()">${c.ratingSubmitted?'Valoración registrada':'Enviar valoración'}</button><small>Evalúa la calidad, no si te dieron la razón.</small></div>`}
+function earnings(){let i=worker,t=tier(i),r=reputation(i),done=cases.filter(c=>c.advisor===i&&c.status==='Orientación demo recibida'),paid=done.filter(c=>c.demoPaid===true),total=paid.reduce((a,c)=>a+(c.demoAmount||0),0);return `<div class="hero"><small style="color:#dcc9ad">TU ESPACIO PARA CRECER</small><h2>${money(total)}</h2><p>Ganancias simuladas acumuladas · sin dinero real</p><span class="pill" style="color:#304b43">${levels[t]}</span></div><div class="card"><h2>Tu progreso</h2>${communityProfile(i)}<p>${t===4?'Categoría máxima':t===0?'Completa requisitos y habilita modalidad remunerada':Math.max(0,thresholds[t+1]-r.n)+' valoraciones para el siguiente nivel (además de calidad y requisitos)'}</p><div class="progress"><i style="width:${t===4?100:Math.min(100,r.n/thresholds[t+1]*100)}%"></i></div><button class="wide light" onclick="setAvailable()">${community.availability[i]===false?'Activar':'Pausar'} disponibilidad</button></div><div class="card"><h2>Simulador de ingresos</h2><label>Tarifa ficticia CLP</label><input type="number" min="0" max="100000" value="${community.price}" onchange="community.price=Math.max(0,Math.min(100000,Number(this.value)||0));persistCommunity();render()"><label>Porcentaje orientador</label><input type="number" min="0" max="100" value="${community.share}" onchange="community.share=Math.max(0,Math.min(100,Number(this.value)||0));persistCommunity();render()"><p>Por orientación: <b>${money(community.price*community.share/100)}</b></p><p>40 orientaciones: ${money(40*community.price*community.share/100)}</p><small>Hipotético, antes de impuestos y costos. No garantiza demanda.</small></div><h2>Oportunidades disponibles</h2>${cases.filter(c=>c.status==='Listo para elegir'&&c.risk==='no'&&(c.mode==='individual'||c.second)&&eligible(people[i],c)).map(c=>`<div class="card"><b>${esc(c.category)}</b><p>${esc(c.mode)} · ${Math.round(score(people[i],c))}% afinidad</p><button class="wide light" onclick="claim(${c.id})" ${community.claimed.includes(c.id+':'+i)?'disabled':''}>${community.claimed.includes(c.id+':'+i)?'Interés registrado':'Manifestar interés'}</button><small>El usuario conserva la elección. No se muestran relatos.</small></div>`).join('')||'<div class="card">No hay solicitudes compatibles. Crea un caso ficticio desde Usuario para probar.</div>'}<h2>Historial de ingresos</h2>${done.map(c=>`<div class="card">${esc(c.category)} · ${money(c.demoAmount||0)}<br><small>${c.demoPaid?'Remuneración simulada':'Sin remuneración registrada'}</small></div>`).join('')||'<div class="card">Aún no hay entregas.</div>'}`}
+const oldSubmit=submitDemo;submitDemo=function(id){let c=cases.find(x=>x.id===id),before=c&&c.status;oldSubmit(id);if(c&&before==='Asignado'&&c.status==='Orientación demo recibida'){c.demoPaid=tier(worker)>0;c.demoAmount=c.demoPaid?Math.round(community.price*community.share/100):0;save();render()}};
+const oldRate=rate;rate=function(n){let c=current();if(c&&c.ratingSubmitted)return;oldRate(n)};
+const oldRender=render;render=function(){oldRender();if(page==='home')app.insertAdjacentHTML('beforeend',`<h2>Una comunidad que crece</h2>${people.map((p,i)=>`<div class="card">${communityProfile(i)}</div>`).join('')}<button class="wide" onclick="switchRole('advisor')">Quiero orientar y generar ingresos →</button>`);if(page==='advisor')app.insertAdjacentHTML('beforeend',earnings());if(page==='profile')app.insertAdjacentHTML('beforeend',`<div class="card">${communityProfile(selected)}</div>`);if(page==='detail'&&current()&&current().status==='Orientación demo recibida')app.insertAdjacentHTML('beforeend',ratingPanel(current()));if(page==='admin')app.insertAdjacentHTML('beforeend',`<h2>Reputación y remuneraciones</h2>${people.map((p,i)=>`<div class="card">${communityProfile(i)}</div>`).join('')}<div class="card">Total remuneraciones simuladas: ${money(cases.reduce((a,c)=>a+(c.demoAmount||0),0))}</div>`)};
+const resetV5=resetAll;resetAll=function(){if(!confirm('¿Borrar todos los datos de demostración v1.0?'))return;cases=[];active=null;ops=initial();demo={age:'Sin definir',children:'Sin definir',duration:'Sin definir',incidents:[],modules:{},price:0,cost:0};community={availability:{},claimed:[],ratings:{},price:5000,share:80};save();persist();saveDemo();persistCommunity();go('home')};
+render();
+
+
+const fresh7=()=>({messages:[],appointments:[],withdrawals:[],invites:0,terms:false,seen:false});let life=fresh7();try{life=Object.assign(life,JSON.parse(localStorage.getItem('humania-v07-life')||'{}'))}catch(e){}
+function saveLife(){try{localStorage.setItem('humania-v07-life',JSON.stringify(life))}catch(e){storage=false}}
+function changeLife(k,v){life[k]=v;saveLife();render()}
+function sendPreset(){let c=current();if(!c||c.risk!=='no'||c.advisor==null||!approved(c.advisor)||(role==='advisor'&&worker!==c.advisor)||!['user','advisor'].includes(role))return;life.messages.push({id:c.id,from:role,body:role==='user'?'Gracias, quedo pendiente de la orientación.':'Confirmo recepción de la solicitud de demostración.'});life.seen=false;saveLife();render()}
+function messageUI(c){if(!c||c.risk!=='no'||c.advisor==null||!approved(c.advisor))return '';return `<div class="card"><h2>Mensajes del caso</h2><small>Simulación local, sin privacidad real ni envío externo.</small>${life.messages.filter(m=>m.id===c.id).map(m=>`<p class="bubble"><b>${m.from==='user'?'Usuario':'Orientador'}</b><br>${esc(m.body)}</p>`).join('')}<button class="wide light" onclick="sendPreset()">Enviar mensaje de prueba</button></div>`}
+function addSlot(){if(role!=='advisor'||!approved(worker))return;let d=document.getElementById('slotDate').value,t=document.getElementById('slotTime').value;if(!d||!t||life.appointments.some(a=>a.i===worker&&a.d===d&&a.t===t))return;life.appointments.push({i:worker,d,t});saveLife();render()}
+function removeSlot(j){if(role!=='advisor'||life.appointments[j]?.i!==worker)return;life.appointments.splice(j,1);saveLife();render()}
+function balance7(i){return cases.filter(c=>c.advisor===i&&c.demoPaid&&c.status==='Orientación demo recibida').reduce((n,c)=>n+(Number(c.demoAmount)||0),0)-life.withdrawals.filter(w=>w.i===i).reduce((n,w)=>n+w.amount,0)}
+function withdraw7(){if(role!=='advisor'||!approved(worker))return;let n=Number(document.getElementById('withdrawAmount').value);if(!Number.isInteger(n)||n<=0||n>balance7(worker)){alert('Monto inválido o saldo insuficiente');return}life.withdrawals.push({i:worker,amount:n});saveLife();render()}
+function invite7(){life.invites++;saveLife();render()}
+function agenda7(){return `<div class="card"><h2>Mi agenda</h2><small>Disponibilidad local, sin reservas reales.</small><label>Fecha</label><input id="slotDate" type="date"><label>Hora local</label><input id="slotTime" type="time"><button class="wide light" onclick="addSlot()">Agregar horario</button>${life.appointments.map((a,j)=>a.i===worker?`<p>${esc(a.d)} · ${esc(a.t)} <button class="light" onclick="removeSlot(${j})">Quitar</button></p>`:'').join('')}</div>`}
+function wallet7(){return `<div class="card"><small>BILLETERA · DEMOSTRACIÓN CLP</small><h1>${money(balance7(worker))}</h1><label>Monto de retiro simulado</label><input id="withdrawAmount" type="number" min="1" step="1"><button class="wide" onclick="withdraw7()">Simular retiro</button>${life.withdrawals.filter(w=>w.i===worker).map(w=>`<p>${money(w.amount)} · Retiro ficticio</p>`).join('')}<small>No se solicitan datos bancarios ni se mueve dinero.</small></div>`}
+const render6=render;render=function(){render6();let done=cases.filter(c=>c.status==='Orientación demo recibida').length;let impact=`<div class="card"><h2>Impacto de nuestra comunidad</h2><div class="grid"><div><h2>${done}</h2>Orientaciones demo</div><div><h2>${ops.sos.length}</h2>Solicitudes SOS demo</div></div><small>Contadores locales, no impacto real. Compromiso del 3% aprobado; sin donaciones reales en esta demo.</small></div>`;if(page==='home'){app.insertAdjacentHTML('afterbegin',`<div class="card welcome7"><small>COMUNIDAD HUMANIA · DEMO</small><h2>Qué bueno tenerte aquí</h2><p>Encuentra apoyo o comparte tu experiencia.</p><button class="wide light" onclick="changeLife('seen',true)">${life.seen?'Notificaciones revisadas':'Notificaciones · '+life.messages.length+' mensajes de prueba'}</button></div>`);app.insertAdjacentHTML('beforeend',impact+`<div class="card"><h2>Invita a alguien</h2><p>${life.invites} invitaciones simuladas</p><button class="wide light" onclick="invite7()">Simular invitación</button><small>No se envía ningún enlace ni mensaje.</small></div><div class="card"><h2>Condiciones de demostración</h2><p>Solo datos ficticios. Sin orientación real, pagos ni confidencialidad efectiva.</p><button class="wide light" onclick="changeLife('terms',!life.terms)">${life.terms?'✓ Aceptación demo registrada':'Aceptar condiciones de demostración'}</button><p>País: ${esc(ops.country)} · ${esc(({Chile:'CLP',Argentina:'ARS','Perú':'PEN',Colombia:'COP','México':'MXN'})[ops.country]||'CLP')} de referencia. Simuladores aún en CLP.</p></div>`)}if(page==='detail'&&role==='user')app.insertAdjacentHTML('beforeend',messageUI(current()));if(page==='advisor'){app.insertAdjacentHTML('beforeend',wallet7()+agenda7());cases.filter(c=>c.advisor===worker&&c.risk==='no'&&approved(worker)).forEach(c=>app.insertAdjacentHTML('beforeend',`<div class="card"><b>Mensajería · caso ${Number(c.id)}</b>${life.messages.filter(m=>m.id===c.id).map(m=>`<p class="bubble">${esc(m.body)}</p>`).join('')}<button class="wide light" onclick="active=${Number(c.id)};sendPreset()">Confirmar recepción demo</button></div>`))}if(page==='admin')app.insertAdjacentHTML('beforeend',impact+`<div class="card"><h2>Actividad operativa</h2><p>${life.withdrawals.length} retiros ficticios · ${life.appointments.length} horarios · ${life.invites} invitaciones</p><small>Sin acceso a conversaciones desde este panel adicional.</small></div>`)};
+resetAll=function(){if(!confirm('¿Borrar todos los datos ficticios de v1.0?'))return;cases=[];active=null;ops=initial();demo={age:'Sin definir',children:'Sin definir',duration:'Sin definir',incidents:[],modules:{},price:0,cost:0};community={availability:{},claimed:[],ratings:{},price:5000,share:80};life=fresh7();save();persist();saveDemo();persistCommunity();saveLife();go('home')};render();
+
+function donation8(n){return Math.round(Math.max(0,Number(n)||0)*0.03)}
+function purpose8(){return `<section class="purpose8"><small>NUESTRO PROPÓSITO</small><svg viewBox="0 0 300 110" aria-hidden="true"><circle cx="105" cy="29" r="23" fill="#dcc9ad"/><circle cx="195" cy="29" r="23" fill="#91b5a5"/><path d="M45 105 Q55 55 105 58 Q145 58 150 105 M150 105 Q155 58 195 58 Q245 55 255 105" fill="none" stroke="#f6f2e9" stroke-width="5" stroke-linecap="round"/></svg><h2>Creemos en las personas. Creemos en ayudarnos.</h2><p>Humanizar la manera en que nos ayudamos.</p><button class="wide" onclick="document.getElementById('story8').hidden=false;document.getElementById('story8').scrollIntoView({block:'start'})">Conoce nuestra historia y causa</button></section><section id="story8" hidden><div class="card"><h2>Quiénes somos</h2><p>HUMANIA es un proyecto de empresa de impacto social que conecta a quienes necesitan orientación con profesionales y personas capacitadas con experiencias de vida similares.</p><h2>Qué hacemos</h2><p>Facilitamos la escucha, la comprensión y la búsqueda de acuerdos, sin decidir quién tiene la razón. Creamos oportunidades de ingresos para quienes ayudan a otros.</p><h2>Nuestra causa</h2><p>Construir una sociedad más empática, menos solitaria y con mayores oportunidades. Nuestro programa SOS busca facilitar el acceso gratuito a orientación y derivación especializada en adicciones.</p><p><b>La tecnología nos conecta. Las personas nos ayudan.</b></p></div></section><section class="purpose8"><small>COMPROMISO SOCIAL APROBADO</small><div class="big8">3%</div><h2>Ayudar también transforma otras vidas.</h2><p>Destinaremos el 3% de los ingresos propios de HUMANIA a fundaciones dedicadas a la prevención, tratamiento y recuperación de adicciones. No se descontará de la remuneración del orientador.</p><p>Compromiso futuro: aún no existen ingresos, donaciones ni fundaciones asociadas verificadas.</p><button class="wide" onclick="document.getElementById('impact8').scrollIntoView({block:'start'})">Conoce nuestro impacto</button></section>`}
+function impact8(){let done=cases.filter(c=>c.status==='Orientación demo recibida').length;return `<section class="card cause8" id="impact8"><h2>Transparencia e impacto</h2><div class="grid"><div><small>Orientaciones demo</small><h2>${done}</h2></div><div><small>SOS demo</small><h2>${ops.sos.length}</h2></div></div><p>Donaciones reales verificadas: ninguna registrada.</p><p>Fundaciones beneficiadas y comprobantes: pendientes de operación real.</p><label for="own8">Simula ingresos propios HUMANIA (CLP)</label><input id="own8" type="number" min="0" value="1000" oninput="document.getElementById('don8').textContent=money(donation8(this.value))"><p>Aporte simulado (3%): <b id="don8">${money(donation8(1000))}</b></p><small>No es dinero recaudado. La base contable definitiva y periodicidad de donaciones requieren validación legal y financiera.</small></section>`}
+const render7=render;render=function(){render7();if(page==='home'){app.insertAdjacentHTML('afterbegin',purpose8());app.insertAdjacentHTML('beforeend',impact8())}if(page==='admin')app.insertAdjacentHTML('beforeend',impact8())};render();
+
+function scene9(variant){return `<svg class="scene9" viewBox="0 0 480 235" role="img" aria-label="Ilustración de dos personas conversando y acompañándose"><defs><linearGradient id="sky${variant}" x2="1" y2="1"><stop stop-color="#e9cba4"/><stop offset="1" stop-color="#91b5a5"/></linearGradient></defs><rect width="480" height="235" fill="url(#sky${variant})"/><circle cx="390" cy="47" r="65" fill="#f6e7c9" opacity=".7"/><path d="M0 180 Q110 100 240 170 T480 145 V235 H0Z" fill="#739487"/><path d="M0 208 Q150 165 300 211 T480 185 V235 H0Z" fill="#47695e"/><path d="M78 235 Q70 140 155 126 Q224 129 232 235" fill="#f0d6b5"/><path d="M248 235 Q255 137 326 126 Q400 130 417 235" fill="#304b43"/><ellipse cx="159" cy="88" rx="40" ry="47" fill="#b97d58"/><path d="M119 91 Q96 29 155 31 Q205 25 202 85 Q178 52 150 61 Q137 78 119 91" fill="#493b35"/><ellipse cx="325" cy="88" rx="40" ry="47" fill="#d6a17d"/><path d="M285 88 Q271 31 326 30 Q380 31 367 97 L349 62 Q318 80 285 88" fill="#423c36"/><path d="M168 101 Q178 109 188 100 M295 101 Q305 109 315 100" stroke="#663e32" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M183 171 Q221 204 253 177 M300 171 Q265 204 237 180" stroke="#bd8b69" stroke-width="17" stroke-linecap="round" fill="none"/><path d="M223 68 Q240 49 257 68" stroke="#fff3dc" stroke-width="4" fill="none" stroke-linecap="round"/></svg>`}
+function showStory9(){var el=document.getElementById('story9');el.hidden=false;el.scrollIntoView({block:'start'});}
+purpose8=function(){return `<section class="manifest9">${scene9('a')}<article><small>UNA NUEVA FORMA DE AYUDARNOS</small><h1>En un mundo cada vez más conectado, necesitamos volver a encontrarnos.</h1><p>HUMANIA nace para que nadie tenga que enfrentar sus conflictos sin sentirse escuchado.</p><button class="wide" onclick="showStory9()">Descubre quiénes somos y nuestra causa</button><button class="wide outline9" onclick="go('people')">Conoce nuestra comunidad</button></article></section><section class="story9" id="story9" hidden><small>MANIFIESTO HUMANIA</small><h2>No somos solamente una aplicación.</h2><p>Somos un proyecto de empresa de impacto social que busca transformar la manera en que enfrentamos nuestros conflictos, compartimos experiencias y nos acompañamos.</p><p>Detrás de cada problema existe una historia. Detrás de cada experiencia existe un aprendizaje. Y cada persona tiene la capacidad de ayudar a alguien más.</p>${scene9('b')}<h2>Tu historia puede cambiar otra historia.</h2><p>Conectamos a quienes necesitan orientación con profesionales y personas capacitadas que han vivido situaciones similares. Queremos reconocer el valor de sus experiencias y crear oportunidades económicas dignas.</p><div class="pledge9"><h2>Nuestra revolución es humana.</h2><p>No queremos reemplazar a las personas con tecnología. Queremos acercarlas.</p><p>No queremos decidir quién tiene la razón. Queremos construir comprensión.</p><p>No queremos crecer solos. Queremos que nuestra comunidad crezca con nosotros.</p></div><h2>Nuestra causa</h2><p>Una sociedad más empática, menos solitaria y con mayores oportunidades. Nuestro programa SOS busca facilitar orientación gratuita y derivación especializada en adicciones.</p><p class="quote9">El mundo necesita más humanidad. Queremos ser parte de ese cambio.</p><p>La tecnología nos conecta. Las personas nos ayudan.</p><button class="wide" onclick="go('people')">Encontrar orientación humana</button><button class="wide light" onclick="switchRole('advisor')">Explorar cómo ser orientador</button></section><section class="pledge9"><small style="color:#dcc9ad">COMPROMISO SOCIAL APROBADO</small><br><strong>3%</strong><h2>Ayudar también transforma otras vidas.</h2><p>Destinaremos el 3% de los ingresos propios de HUMANIA a fundaciones dedicadas a la prevención, tratamiento y recuperación de adicciones, sin descontarlo de la remuneración del orientador.</p><p>Compromiso futuro: todavía no existen donaciones ni convenios reales.</p><button class="wide light" onclick="document.getElementById('impact8').scrollIntoView({block:'start'})">Transparencia e impacto</button></section>`};render();
+
+var verified10=false;
+try{verified10=localStorage.getItem('humania-demo-verified10')==='yes'}catch(e){}
+function verify10(v){verified10=v;try{localStorage.setItem('humania-demo-verified10',v?'yes':'no')}catch(e){}render()}
+function identity10(c){return c.privacy==='named'?'Usuario de prueba · perfil visible':'Usuario anónimo · identidad simulada'}
+function privacy10(){return `<section class="card" style="border:2px solid #528575"><h2>Privacidad del caso</h2><p>Marca la verificación simulada para crear el caso. Usa solo datos ficticios.</p><label><input type="checkbox" ${verified10?'checked':''} onchange="verify10(this.checked)"> Simular identidad verificada</label><label>¿Cómo quieres presentarte ante el orientador?</label><select onchange="draft.privacy=this.value;render()"><option value="anonymous" ${draft.privacy!=='named'?'selected':''}>De forma anónima (recomendado)</option><option value="named" ${draft.privacy==='named'?'selected':''}>Con mi perfil ficticio</option></select><p>${draft.privacy==='named'?'Se muestra el alias ficticio del perfil.':'El orientador verá un alias anónimo, no tu nombre ni fotografía.'}</p><small>Los casos no son públicos. Esta demo local no ofrece anonimato ni seguridad reales. Los detalles de un relato podrían identificarte.</small></section>`}
+const render10base=render;render=function(){render10base();if(page==='home')app.insertAdjacentHTML('beforeend','<section class="card"><h2>Privacidad para quien necesita ayuda. Transparencia para quien la ofrece.</h2><p>No tienes que mostrarle al mundo tus problemas para recibir ayuda. Los orientadores tienen perfiles públicos y deben verificar su identidad.</p><small>Prototipo: verificación y privacidad simuladas.</small></section>');if(page==='confirm'){app.insertAdjacentHTML('beforeend',privacy10());let b=Array.from(app.querySelectorAll('button')).find(x=>x.textContent.includes('Crear caso ficticio')||x.textContent.includes('Crear caso compartido'));if(b){b.disabled=!verified10;b.before(app.lastElementChild)}}if(page==='detail'&&current())app.insertAdjacentHTML('beforeend',`<div class="card"><h2>Visibilidad de tu caso</h2><p>${identity10(current())}</p><small>Solo demostración local. No es un control de acceso real.</small></div>`);if(page==='profile'){app.insertAdjacentHTML('beforeend',`<div class="card"><h2>Perfil público del orientador</h2><p>${approved(selected)?'✓ Verificación y aprobación simuladas':'Perfil no habilitado'}</p><small>Nombre y avatar ficticios; documentos privados en el futuro servicio.</small></div>`)}if(page==='people'||page==='match')app.insertAdjacentHTML('beforeend','<div class="notice">Solo orientadores aprobados en la simulación. Ningún perfil es real.</div>');if(page==='account')app.insertAdjacentHTML('beforeend',`<div class="card"><h2>Mi identidad</h2><label><input type="checkbox" ${verified10?'checked':''} onchange="verify10(this.checked)"> Identidad verificada (simulación)</label><p>Tu identidad no se publica por defecto.</p></div>`)};render();
+var step11=0, gesture11='', alias11='Mi perfil de prueba';
+try{alias11=localStorage.getItem('humania-alias11')||alias11}catch(e){}
+function begin11(){step11=1;gesture11='';go('verify11')}
+function advance11(){if(step11===1){step11=2;gesture11=['Sonríe','Gira la cabeza hacia la izquierda','Levanta una mano'][Math.floor(Math.random()*3)]}else if(step11===2){step11=3}else if(step11===3){verified10=true;try{localStorage.setItem('humania-demo-verified10','yes')}catch(e){}step11=0;go('account');return}render()}
+function aliasSave11(){alias11=document.getElementById('alias11').value.trim().slice(0,40)||'Mi perfil de prueba';try{localStorage.setItem('humania-alias11',alias11)}catch(e){}render()}
+function categories11(){return `<h1>Categorías HUMANIA</h1><p>Tu experiencia puede convertirse en oportunidades. Categorías exclusivas de orientadores; no clasificamos a quienes buscan ayuda.</p>${levels.map((l,i)=>`<div class="card"><span class="pill tier${i}">${l}</span><p>${i===0?'Participación voluntaria, con verificación y capacitación.':thresholds[i]+' valoraciones de referencia · reputación mínima '+(i===1?'4,5':'4,7')+' · habilitación remunerada'}</p></div>`).join('')}<small>Umbrales de demostración, sujetos a validación.</small>`}
+function verification11(){return `<h1>Verifica tu identidad</h1><div class="notice">Simulación: no uses tu carnet real ni tu cámara. No se recopilan imágenes ni datos biométricos.</div><div class="card"><small>PASO ${step11} DE 3</small><h2>${['','Cédula de identidad','Selfie con gesto aleatorio','Revisión de identidad'][step11]}</h2>${step11===1?'<p>En el servicio real se solicitará el frente y reverso del documento vigente.</p><div class="notice">▣ Cédula ficticia · frente y reverso</div>':step11===2?`<p>Gesto solicitado: <b>${gesture11}</b></p><div class="notice">◉ Selfie ficticia · prueba de presencia</div><p>En producción se deberá comprobar presencia real y coincidencia con el documento.</p>`:'<p>Documento y gesto simulados listos. La revisión real todavía no está disponible.</p>'}<button class="wide" onclick="advance11()">${step11===3?'Completar verificación demo':step11===1?'Simular captura del carnet':'Simular selfie con gesto'}</button><button class="wide light" onclick="go(\'account\')">Cancelar</button></div>`}
+function menu11(){return `<div class="card"><small>MI PERFIL · DEMO</small><h2>${esc(alias11)}</h2><span class="pill">${verified10?'✓ Identidad simulada verificada':'Identidad pendiente'}</span><p>Plan ${esc(ops.plan)} · ${esc(ops.country)}</p><label>Alias ficticio</label><select id="alias11">${opts(["Mi perfil de prueba","Persona demo A","Persona demo B"],alias11)}</select><button class="wide light" onclick="aliasSave11()">Guardar alias</button><button class="wide" onclick="begin11()">${verified10?'Repetir verificación demo':'Crear cuenta / verificar identidad'}</button></div><div class="card stack"><h2>Mi menú</h2>${btn('Mis orientaciones','cases','light')}${btn('Categorías y progreso','categories11','light')}${btn('Explorar orientadores','people','light')}<button class="light" onclick="switchRole('advisor')">Mi espacio de orientador · ingresos y formación</button><button class="light" onclick="go('home');showStory9()">Quiénes somos</button><p>Privacidad: tus casos no son públicos. Puedes solicitar orientación anónima.</p></div>`}
+privacy10=function(){return `<section class="card"><h2>Tu historia, tu decisión</h2><p>${verified10?'✓ Identidad verificada en la demo':'Debes completar la verificación simulada antes de solicitar ayuda.'}</p>${verified10?'':'<button class="wide" onclick="begin11()">Verificar identidad</button>'}<label>Visibilidad ante el orientador</label><select onchange="draft.privacy=this.value;render()"><option value="anonymous" ${draft.privacy!=='named'?'selected':''}>Anónima</option><option value="named" ${draft.privacy==='named'?'selected':''}>Perfil ficticio visible</option></select><small>No ingreses datos reales. No existe seguridad efectiva en esta demo.</small></section>`};
+const base11=render;render=function(){base11();if(page==='account'){Array.from(app.querySelectorAll('h2')).filter(e=>e.textContent==='Mi identidad').forEach(e=>e.parentElement.remove());app.insertAdjacentHTML('afterbegin',menu11())}if(page==='verify11')app.innerHTML=verification11();if(page==='categories11')app.innerHTML=categories11();if(page==='advisor'){app.insertAdjacentHTML('afterbegin',`<div class="card"><h2>Mi perfil de orientador</h2>${communityProfile(worker)}<button class="wide light" onclick="go('categories11')">Ver todas las categorías</button><small>Perfil público ficticio; verificación real pendiente.</small></div>`)}document.querySelector('#nav button:last-child').innerHTML='<b>☰</b>Mi perfil';};
+const reset11=resetAll;resetAll=function(){reset11();if(!cases.length){verified10=false;try{localStorage.removeItem('humania-demo-verified10');localStorage.removeItem('humania-alias11')}catch(e){}alias11='Mi perfil de prueba';render()}};
+
+const rates12=[['Voluntario',0,0],['Bronce',3000,70],['Plata',5000,75],['Oro',7000,80],['Diamante',10000,85],['Profesional (tarifa de referencia)',15000,85]];
+function economy12(){return `<h1>Economía y oportunidades</h1><div class="notice">Modelo preliminar · porcentajes y tarifas pendientes de aprobación. No hay pagos reales.</div><div class="card"><h2>Remuneración por categoría</h2>${rates12.map(([n,p,r])=>`<div style="padding:12px 0;border-bottom:1px solid #ddd"><b>${n}</b><p>${money(p)} por orientación · ${r}% para el orientador</p><div style="display:flex;height:12px;border-radius:8px;overflow:hidden;background:#dcc9ad"><div style="width:${r}%;background:#528575"></div></div><small>Orientador: ${money(p*r/100)} · HUMANIA: ${money(p*(1-r/100))}</small></div>`).join('')}<p>La acreditación profesional es independiente de la categoría de reputación.</p></div><div class="card"><h2>Simula tus ingresos</h2><label>Categoría</label><select id="rate12" onchange="calc12()">${rates12.map(([n],i)=>`<option value="${i}" ${i===2?'selected':''}>${n}</option>`).join('')}</select><label>Casos pagados por día</label><input id="daily12" type="number" min="0" max="20" value="3" oninput="calc12()"><label>Días activos al mes</label><input id="days12" type="number" min="0" max="31" value="22" oninput="calc12()"><div id="income12"></div><small>Ingresos brutos hipotéticos, no garantizados.</small></div><div class="card"><h2>Viabilidad de HUMANIA</h2><label>Orientadores activos de esta categoría</label><input id="workers12" type="number" min="0" max="100000" value="10" oninput="calc12()"><label>Costos fijos mensuales CLP</label><input id="fixed12" type="number" min="0" value="300000" oninput="calc12()"><label>Procesamiento de pagos (%)</label><input id="fee12" type="number" min="0" max="100" step="0.1" value="3.5" oninput="calc12()"><label>Otros costos por caso CLP</label><input id="cost12" type="number" min="0" value="200" oninput="calc12()"><div id="business12"></div><small>Costos ilustrativos sin cotizaciones. No incluye impuestos, suscripciones ni costos de usuarios gratuitos.</small></div><div class="card"><h2>3% para transformar vidas</h2><p>El aporte se calcula sobre los ingresos propios de HUMANIA, nunca sobre la remuneración del orientador. No existen donaciones reales en esta demo.</p></div>`}
+function calc12(){const el=id=>document.getElementById(id), num=(id,max=1e12)=>Math.min(max,Math.max(0,Number(el(id).value)||0));let [n,p,r]=rates12[Number(el('rate12').value)]||rates12[0],q=Math.floor(num('daily12',20))*Math.floor(num('days12',31)),w=Math.floor(num('workers12',100000)),f=num('fixed12'),fee=num('fee12',100)/100,c=num('cost12'),pay=p*r/100,own=p-pay,don=own*.03,m=own-don-p*fee-c;el('income12').innerHTML=`<h1>${money(pay*q)}</h1><p>${q} orientaciones mensuales · ${money(pay)} por caso</p>`;el('business12').innerHTML=`<p>Ingresos propios: <b>${money(own*q*w)}</b></p><p>Remuneraciones comunidad: ${money(pay*q*w)}</p><p>Aporte social: ${money(don*q*w)}</p><p>Procesamiento: ${money(p*fee*q*w)}</p><p>Otros costos variables: ${money(c*q*w)}</p><h2>Resultado operativo: ${money(m*q*w-f)}</h2><p>Punto de equilibrio: ${m>0?Math.ceil(f/m)+' casos mensuales':'No alcanzable con este margen'}</p>`;}
+const base12=render;render=function(){base12();if(page==='economy12'){app.innerHTML=economy12();calc12();return}if(['account','advisor','admin'].includes(page))app.insertAdjacentHTML('afterbegin',`<div class="card"><small>ECONOMÍA HUMANIA</small><h2>Tu experiencia tiene valor</h2><button class="wide" onclick="go('economy12')">${role==='admin'?'Simular rentabilidad y costos':'Ver remuneraciones y simular ingresos'}</button><small>Tarifas preliminares · sin pagos reales</small></div>`)};
+render();
+
+function months13(i){return [8,2,6][i]||0}
+var growth13={demand:200,capacity:20,target:20,waiting:[],active:[]};
+try{Object.assign(growth13,JSON.parse(localStorage.getItem('humania-growth13')||'{}'))}catch(e){}
+function save13(){try{localStorage.setItem('humania-growth13',JSON.stringify(growth13))}catch(e){}}
+function status13(d,a,t){let ratio=d/Math.max(1,a*t);return ratio>1.2?'Verde':ratio<.8?'Rojo':'Amarillo'}
+function update13(){for(let k of ['demand','capacity','target'])growth13[k]=Math.max(k==='demand'?0:1,Math.min(100000,Math.floor(Number(document.getElementById(k+'13').value)||0)));save13();draw13()}
+function draw13(){let g=growth13,a=g.capacity+g.active.length,st=status13(g.demand,a,g.target);document.getElementById('result13').innerHTML=`<h2>${st==='Verde'?'🟢':st==='Rojo'?'🔴':'🟡'} ${st}</h2><p>${st==='Verde'?'Incorporación abierta':st==='Rojo'?'Lista de espera':'Incorporación selectiva'} · ${ (g.demand/a).toFixed(1)} casos pagados por orientador al mes.</p><p>Capacidad objetivo: ${a*g.target} casos · activos simulados: ${a}</p><small>Umbrales de ejemplo: menos de 80% de ocupación, espera; más de 120%, apertura. Revisar también especialidad, calidad y tiempos de espera.</small>`;}
+function apply13(){let g=growth13;if(!verified10){begin11();return}if(!g.waiting.some(x=>x.self)&&!g.active.some(x=>x.self)){g.waiting.push({name:'Mi perfil ficticio',self:true,ready:false});save13()}render()}
+function candidate13(){growth13.waiting.push({name:'Postulante demo '+(growth13.waiting.length+growth13.active.length+1),ready:false});save13();render()}
+function ready13(i){if(role!=='admin'||!growth13.waiting[i])return;growth13.waiting[i].ready=true;save13();render()}
+function activate13(i){let g=growth13;if(role!=='admin'||!g.waiting[i]?.ready||status13(g.demand,g.capacity+g.active.length,g.target)==='Rojo')return;g.active.push(g.waiting.splice(i,1)[0]);save13();render()}
+function growthPage13(){let g=growth13;return `<h1>Crecer con equilibrio</h1><div class="notice">Simulación de planificación. No hay postulaciones, empleos ni ingresos reales.</div><div class="card"><h2>Oferta y demanda</h2>${[['demand','Casos pagados mensuales'],['capacity','Orientadores activos de base'],['target','Casos objetivo por orientador al mes']].map(([k,n])=>`<label>${n}</label><input type="number" min="${k==='demand'?0:1}" id="${k}13" value="${g[k]}" oninput="update13()">`).join('')}<div id="result13"></div></div><div class="card"><h2>Postulación y lista de espera</h2><p>Verificación → capacitación → revisión → espera → activación según demanda.</p><button class="wide" onclick="apply13()">Postular con mi perfil demo</button><p>${g.active.some(x=>x.self)?'Tu postulación fue activada en la demo.':g.waiting.some(x=>x.self)?'Tu postulación está en espera.':'Todavía no has postulado.'}</p><small>Sin garantía de casos ni ingresos.</small></div>`}
+function adminGrowth13(){let g=growth13;return `<div class="card"><h2>Gestión de incorporaciones</h2><button class="wide light" onclick="candidate13()">Añadir postulante ficticio</button>${g.waiting.map((x,i)=>`<div class="notice"><b>${esc(x.name)}</b><p>${x.ready?'Requisitos simulados completos':'Revisión pendiente'}</p><button onclick="ready13(${i})">Simular verificación y formación</button><button onclick="activate13(${i})" ${!x.ready||status13(g.demand,g.capacity+g.active.length,g.target)==='Rojo'?'disabled':''}>Activar</button></div>`).join('')}<p>Activados en esta simulación: ${g.active.length}</p><small>Los postulantes simulados no se añaden al catálogo de perfiles ni reciben casos reales.</small></div>`}
+categories11=function(){return `<h1>Categorías HUMANIA</h1><p>Reconocemos calidad, trayectoria y capacitación, no solo volumen.</p>${levels.map((l,i)=>`<div class="card"><span class="pill tier${i}">${l}</span><p>${i===0?'Verificación y capacitación.':thresholds[i]+' valoraciones · nota mínima '+[0,4.3,4.5,4.7,4.8][i]+' · '+[0,1,3,6,12][i]+' meses'}</p></div>`).join('')}<p>Ascensos sujetos a revisión de calidad y fraude. Bronce provisional remunerado: propuesta en estudio, no habilitada.</p><small>Requisitos de simulación; no son condiciones comerciales definitivas.</small>`};
+const base13=render;render=function(){base13();if(page==='growth13'){app.innerHTML=growthPage13();draw13();return}if(['account','advisor','admin'].includes(page)){app.insertAdjacentHTML('afterbegin',`<div class="card"><h2>Crecimiento inteligente</h2><button class="wide light" onclick="go('growth13')">Oferta, demanda y postulación</button></div>`)}if(page==='admin')app.insertAdjacentHTML('afterbegin',adminGrowth13())};render();
+
+const legacy14=render;
+let space14='user';
+function enter14(r){space14=r;switchRole(r)}
+function nav14(){let items=space14==='advisor'?[['advisor','⌂','Inicio'],['advisorCases14','▤','Mis casos'],['advisorMoney14','$','Ingresos'],['advisorProfile14','◉','Mi perfil']]:space14==='admin'?[['admin','⌂','Inicio'],['adminOps14','▤','Gestión'],['adminMoney14','$','Finanzas'],['spaces14','◉','Espacios']]:[['home','⌂','Inicio'],['cases','▤','Mis casos'],['community19','◎','Comunidad'],['account','◉','Mi perfil']];document.getElementById('nav').innerHTML=items.map(([p,i,t])=>`<button class="${page===p||(p==='community19'&&(page==='people'||(page==='profile'&&origin==='people')))?'active':''}" onclick="go('${p}')"><b>${i}</b>${t}</button>`).join('')}
+function menuButton14(t,p){return `<button class="wide light" onclick="go('${p}')">${t} →</button>`}
+function fold14(title,html){return `<details class="section14"><summary>${title}</summary>${html}</details>`}
+const feedPosts = [
+  {id: 'bienvenida', category: 'Comunidad', title: 'Bienvenida a HUMANIA', body: 'Este espacio reúne recursos sobre convivencia y orientación humana. Si quieres conversar sobre una situación personal, puedes abrir un caso privado desde Inicio.'},
+  {id: 'orientacion', category: 'Orientación', title: '¿Cómo elijo a un orientador?', body: 'Explora perfiles de profesionales y de personas con experiencia vivida. Puedes revisar sus especialidades y valoraciones antes de elegir.'},
+  {id: 'privacidad', category: 'Privacidad', title: 'Dos perspectivas, dos espacios', body: 'En un caso compartido, cada persona cuenta su versión por separado. Si prefieres conversar por tu cuenta, puedes elegir la modalidad individual.'}
+];
+const feedReactionKey = 'humania-v19-reactions';
+const feedReactions = new Set();
+try {
+  const saved = JSON.parse(localStorage.getItem(feedReactionKey) || '[]');
+  if (Array.isArray(saved)) {
+    for (const post of feedPosts) if (saved.includes(post.id)) feedReactions.add(post.id);
+  }
+} catch (e) {}
+
+function updateFeedReaction(id, button) {
+  if (!feedPosts.some(post => post.id === id)) return;
+  if (feedReactions.has(id)) feedReactions.delete(id);
+  else feedReactions.add(id);
+  const reacted = feedReactions.has(id);
+  button.setAttribute('aria-pressed', String(reacted));
+  button.firstElementChild.textContent = reacted ? '♥' : '♡';
+  try {
+    localStorage.setItem(feedReactionKey, JSON.stringify([...feedReactions]));
+  } catch (e) {}
+}
+
+function communityFeed(preview = false) {
+  const posts = preview ? feedPosts.slice(0, 1) : feedPosts;
+  return `<section class="community-feed" aria-labelledby="community-title">
+    <div class="feed-intro">
+      <h1 id="community-title">Comunidad</h1>
+      <button type="button" class="light" onclick="go('${preview ? 'community19' : 'people'}')">${preview ? 'Ver publicaciones' : 'Explorar orientadores'}</button>
+    </div>
+    <p class="muted">Publicaciones de ejemplo. Tus reacciones se guardan en este dispositivo.</p>
+    ${posts.map(post => {
+      const reacted = feedReactions.has(post.id);
+      return `<article class="card feed-post" aria-labelledby="post-${post.id}">
+        <div class="feed-author"><span class="feed-avatar" aria-hidden="true">H</span>
+          <div><strong>Equipo HUMANIA</strong><small>${post.category}</small></div>
+        </div>
+        <h2 id="post-${post.id}">${post.title}</h2>
+        <p>${post.body}</p>
+        <div class="feed-actions">
+          <button type="button" class="feed-reaction" aria-pressed="${reacted}"
+            onclick="updateFeedReaction('${post.id}', this)">
+            <span aria-hidden="true">${reacted ? '♥' : '♡'}</span> Me gusta
+          </button>
+        </div>
+      </article>`;
+    }).join('')}
+  </section>`;
+}
+
+const supportStates = {pending: 'Recibida', reviewing: 'En revisión', closed: 'Cerrada'};
+const supportTopics = {
+  duplicate: {label: 'Cobro duplicado', hint: 'Usa fechas y montos ficticios.'},
+  fake: {label: 'Cuenta falsa o suplantación', hint: 'Indica el alias ficticio y qué llamó tu atención.'},
+  access: {label: 'Problema con la app o mi cuenta', hint: 'Indica la pantalla y qué intentabas hacer.'},
+  idea: {label: 'Sugerencia', hint: 'Cuéntanos qué haría más fácil usar HUMANIA.'}
+};
+let supportReturn = 'home';
+let supportClient = null;
+let supportUser = null;
+let supportAuthReady = false;
+let supportRequests = [];
+let supportView = '';
+let supportVersion = 0;
+let supportLoading = false;
+let supportError = '';
+let supportNotice = '';
+
+function supportSessionChanged(client, session) {
+  const uid = session?.user?.id || null;
+  if (supportAuthReady && supportUser === uid && supportClient === client) return;
+  supportAuthReady = true;
+  supportClient = client;
+  supportUser = uid;
+  supportView = '';
+  supportVersion++;
+  supportRequests = [];
+  resetCloudCases();
+  if (['support','support-admin','cases','cloud-detail'].includes(page)) render();
+}
+
+function openSupport() {
+  supportReturn = page === 'account' ? 'account' : 'home';
+  go('support');
+}
+
+function changeSupportTopic(topic) {
+  document.getElementById('support-hint').textContent = supportTopics[topic]?.hint || '';
+}
+
+function refreshSupport() {
+  supportView = '';
+  render();
+}
+
+function prepareSupportView() {
+  const view = page === 'support' || page === 'support-admin' ? page : '';
+  if (view === supportView) return;
+  supportView = view;
+  const version = ++supportVersion;
+  supportRequests = [];
+  supportNotice = '';
+  supportError = '';
+  supportLoading = false;
+  if (!view || !supportUser || !supportClient) return;
+  supportLoading = true;
+  const uid = supportUser;
+  const client = supportClient;
+  setTimeout(() => loadSupport(view, uid, client, version), 0);
+}
+
+async function loadSupport(view, uid, client, version) {
+  try {
+    if (view === 'support-admin') {
+      const {data, error} = await client.from('humania_support_admins').select('user_id').eq('user_id', uid).maybeSingle();
+      if (error) throw error;
+      if (version !== supportVersion) return;
+      if (!data) {
+        supportError = 'Tu cuenta no está autorizada para gestionar soporte.';
+        return;
+      }
+    }
+    let query = client.from('humania_support_requests').select('id,topic,message,state,created_at').order('created_at', {ascending:false});
+    if (view === 'support') query = query.eq('user_id', uid);
+    const {data, error} = await query;
+    if (version !== supportVersion) return;
+    if (error) throw error;
+    supportRequests = data || [];
+  } catch (e) {
+    if (version === supportVersion) supportError = 'No se pudo cargar el soporte. Intenta nuevamente.';
+  } finally {
+    if (version === supportVersion) {
+      supportLoading = false;
+      render();
+    }
+  }
+}
+
+async function saveSupportRequest(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  if (!supportUser || supportView !== 'support') return;
+  const topic = form.elements.topic.value;
+  const message = form.elements.message.value.trim();
+  const status = document.getElementById('support-status');
+  const button = form.querySelector('button[type=submit]');
+  if (button.disabled || !Object.hasOwn(supportTopics, topic) || !message || message.length > 500) return;
+  const version = supportVersion;
+  button.disabled = true;
+  status.textContent = 'Enviando…';
+  try {
+    const {data, error} = await supportClient.from('humania_support_requests').insert({topic,message}).select('id,topic,message,state,created_at').single();
+    if (version !== supportVersion) return;
+    if (error) throw error;
+    supportRequests = [data, ...supportRequests];
+    supportNotice = 'Solicitud ' + data.id + ' guardada en Supabase.';
+    render();
+  } catch (e) {
+    if (version === supportVersion) status.textContent = 'No se pudo confirmar el envío. Revisa el historial antes de volver a enviarla.';
+  } finally {
+    button.disabled = false;
+  }
+}
+
+async function saveSupportState(event, index) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  if (space14 !== 'admin' || supportView !== 'support-admin' || !supportRequests[index]) return;
+  const entry = supportRequests[index];
+  const state = form.elements.state.value;
+  const button = form.querySelector('button[type=submit]');
+  const status = form.querySelector('[role=status]');
+  if (button.disabled || !Object.hasOwn(supportStates,state)) return;
+  const version = supportVersion;
+  button.disabled = true;
+  try {
+    const {data,error} = await supportClient.from('humania_support_requests').update({state}).eq('id',entry.id).select('id,state').single();
+    if (version !== supportVersion) return;
+    if (error || !data) throw error || Error();
+    entry.state = data.state;
+    status.textContent = 'Estado guardado: ' + supportStates[data.state] + '.';
+  } catch (e) {
+    if (version === supportVersion) status.textContent = 'No se pudo guardar el estado.';
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function supportGate() {
+  if (!supportAuthReady) return '<p>Comprobando sesión…</p>';
+  if (!supportUser) return '<p>Inicia sesión con tu cuenta de prueba para acceder al soporte.</p><button class="wide" onclick="space14=\'user\';go(\'account\')">Ir a Mi perfil</button>';
+  if (supportLoading) return '<p>Cargando solicitudes…</p>';
+  if (supportError) return '<p role="status">'+esc(supportError)+'</p><button class="light wide" onclick="refreshSupport()">Reintentar</button>';
+  return '';
+}
+
+function supportCard(entry) {
+  return `<h2>${esc(supportTopics[entry.topic]?.label || entry.topic)}</h2><small>${esc(entry.id)}</small><p>${esc(entry.message)}</p>`;
+}
+
+function supportPage() {
+  const header = back(supportReturn) + '<h1>Ayuda y sugerencias</h1>';
+  const gate = supportGate();
+  if (gate) return header + gate;
+  return header + `<p class="notice">Prueba con Supabase. Usa ejemplos ficticios y evita datos de pago, contraseñas o historias reales.</p>
+    <form class="card" onsubmit="saveSupportRequest(event)">
+      <label for="support-topic">¿Qué necesitas?</label>
+      <select id="support-topic" name="topic" required onchange="changeSupportTopic(this.value)">
+        <option value="">Elige un motivo</option>
+        ${Object.entries(supportTopics).map(([value,topic])=>`<option value="${value}">${topic.label}</option>`).join('')}
+      </select>
+      <label for="support-message">Cuéntanos brevemente</label>
+      <p id="support-hint" class="muted"></p>
+      <textarea id="support-message" name="message" maxlength="500" required aria-describedby="support-hint"></textarea>
+      <button type="submit" class="wide">Enviar solicitud de prueba</button>
+      <p id="support-status" role="status">${esc(supportNotice)}</p>
+    </form>
+    <h2>Mis solicitudes</h2>
+    <button class="light wide" onclick="refreshSupport()">Actualizar historial</button>
+    ${supportRequests.length ? supportRequests.map(entry=>`<article class="card support-request">${supportCard(entry)}<span class="pill">${esc(supportStates[entry.state])}</span></article>`).join('') : '<p>Todavía no tienes solicitudes en Supabase.</p>'}
+    <p class="muted">Las solicitudes locales de versiones anteriores permanecen en el dispositivo y no se sincronizan automáticamente.</p>`;
+}
+
+function supportAdminPage() {
+  const header = back('admin') + '<h1>Solicitudes de soporte</h1>';
+  const gate = supportGate();
+  if (gate) return header + gate;
+  return header + `<p class="muted">Bandeja de prueba vinculada a la cuenta autorizada.</p>
+    <button class="light wide" onclick="refreshSupport()">Actualizar bandeja</button>
+    ${supportRequests.length ? supportRequests.map((entry,index)=>`<article class="card support-request">
+      ${supportCard(entry)}
+      <form onsubmit="saveSupportState(event,${index})">
+        <label for="support-state-${index}">Estado</label>
+        <select name="state" id="support-state-${index}">${Object.entries(supportStates).map(([value,label])=>`<option value="${value}" ${entry.state===value?'selected':''}>${label}</option>`).join('')}</select>
+        <button class="wide light" type="submit">Guardar estado</button><p role="status"></p>
+      </form>
+    </article>`).join('') : '<p>Todavía no hay solicitudes en Supabase.</p>'}`;
+}
+
+function home14() {
+  return `<div class="home-feed">
+    <section class="home-start">
+      <h1>¿En qué te podemos ayudar?</h1>
+      <p>Elige si quieres conversar por tu cuenta o invitar a otra persona.</p>
+      <button type="button" class="wide" onclick="go('help14')">Necesito orientación →</button>
+    </section>
+    <div class="home-shortcuts" role="group" aria-label="Accesos SOS">
+      <button type="button" class="light" onclick="go('violence-sos')">SOS · Violencia contra las mujeres</button>
+      <button type="button" class="light" onclick="go('sos')">SOS · Drogas y alcohol</button>
+    </div>
+    ${communityFeed(true)}
+    <div class="home-shortcuts home-more" role="group" aria-label="Participación e información">
+      <button type="button" class="light" onclick="go('join14')">Quiero ayudar</button>
+      <button type="button" class="light" onclick="go('story14')">Quiénes somos e impacto social</button>
+      <button type="button" class="light home-support" onclick="openSupport()">Ayuda y sugerencias</button>
+    </div>
+  </div>`;
+}
+function portal14(kind){let original=app.innerHTML;return `<h1>${kind==='advisor'?'Mi espacio de orientador':'Administración'}</h1><p>${kind==='advisor'?'Gestiona tus casos y tu crecimiento.':'Gestiona la operación de HUMANIA.'}</p><div class="menu14">${kind==='advisor'?menuButton14('Mis casos y disponibilidad','advisorCases14')+menuButton14('Mis ingresos y agenda','advisorMoney14')+menuButton14('Mi perfil y formación','advisorProfile14'):menuButton14('Gestión, seguridad e incorporaciones','adminOps14')+menuButton14('Solicitudes de soporte','support-admin')+menuButton14('Finanzas e impacto','adminMoney14')}${menuButton14('Cambiar espacio de prueba','spaces14')}</div>${fold14('Todas las herramientas del portal',original)}`}
+render=function(){let requested=page;let mapped={story14:'home',advisorCases14:'advisor',advisorMoney14:'advisor',advisorProfile14:'advisor',adminOps14:'admin',adminMoney14:'admin',account14:'account'}[page];if(mapped)page=mapped;legacy14();let original=app.innerHTML;page=requested;
+if(page==='home')app.innerHTML=home14();
+else if(page==='support')app.innerHTML=supportPage();
+else if(page==='support-admin'&&space14==='admin')app.innerHTML=supportAdminPage();
+else if(page==='community19')app.innerHTML=communityFeed();
+else if(page==='people')app.insertAdjacentHTML('afterbegin',back('community19'));
+else if(page==='story14') {app.innerHTML=back('home')+original;let story=app.querySelector('.story9');if(story)story.hidden=false;}
+else if(page==='help14')app.innerHTML=back('home')+`<h1>¿Cómo quieres recibir ayuda?</h1><p>Elige la modalidad que mejor se adapte a ti.</p><button class="action14" onclick="start('individual')">Orientación individual<small>Solo tú participas y eliges a un orientador.</small></button><button class="action14 secondary" onclick="start('compartida')">Orientación compartida<small>Cada persona cuenta su versión por separado.</small></button>`;
+else if(page==='join14')app.innerHTML=back('home')+`<h1>Tu experiencia tiene valor</h1><p>Postula para ayudar a otras personas. La activación depende de la demanda y de la revisión de requisitos.</p><div class="menu14">${menuButton14('Postular y consultar mi estado','growth13')}${menuButton14('Conocer categorías','categories11')}${menuButton14('Simular ingresos','economy12')}<button onclick="enter14('advisor')">Entrar al espacio de orientador demo</button></div>`;
+else if(page==='spaces14')app.innerHTML=`<h1>Espacios de prueba</h1><p>Estos accesos son simulados; no existe autenticación ni control de permisos real.</p><div class="menu14"><button onclick="enter14('user')">Usuario</button><button onclick="enter14('advisor')">Orientador</button><button onclick="enter14('admin')">Administración</button></div>`;
+else if(page==='account')app.innerHTML=`<h1>Mi perfil</h1><div class="card"><h2>${esc(alias11)}</h2><span class="pill">${verified10?'Identidad demo verificada':'Identidad pendiente'}</span><p>Plan ${esc(ops.plan)}</p><button class="wide" onclick="begin11()">${verified10?'Revisar verificación':'Crear cuenta / verificar identidad'}</button></div><div class="menu14">${menuButton14('Mis orientaciones','cases')}<button class="wide light" type="button" onclick="openSupport()">Ayuda y sugerencias →</button>${menuButton14('Quiero ser orientador','join14')}${menuButton14('Quiénes somos','story14')}${menuButton14('Datos, privacidad y suscripción','account14')}${menuButton14('Cambiar espacio de prueba','spaces14')}</div>`;
+else if(page==='advisor'||page==='admin'){space14=page;app.innerHTML=portal14(page)}
+else if(mapped==='advisor'||mapped==='admin'){space14=mapped;app.innerHTML=back(mapped)+original;let cards=[...app.querySelectorAll(':scope > .card')];let terms=page==='advisorCases14'?/casos|disponibilidad|bandeja/i:page==='advisorMoney14'?/ingresos|economía|agenda|billetera|retiro/i:page==='advisorProfile14'?/perfil|formación|categoría|requisitos/i:page==='adminMoney14'?/finanz|economía|impacto|aporte/i:/gestión|incorpor|seguridad|verific|incidente|sos/i;for(let card of cards){let heading=card.querySelector('h2');if(heading&&!terms.test(heading.textContent)){let d=document.createElement('details');d.className='section14';let sm=document.createElement('summary');sm.textContent=heading.textContent;card.before(d);d.append(sm,card)}}}
+if(page==='economy12'&&space14!=='admin'){let el=document.getElementById('workers12');if(el){let card=el.closest('.card');if(card)card.hidden=true}}
+nav14();};
+render();
+
+// v1.5: institutional identity is visible without opening a menu.
+function identity15(){return `<section class="card identity15"><small>QUIÉNES SOMOS</small><h2>Mucho más que una aplicación.</h2><p>Somos un proyecto de empresa de impacto social que conecta a personas que necesitan orientación con profesionales y personas capacitadas que han vivido experiencias similares.</p><h2>Qué hacemos</h2><p>Facilitamos la escucha, la comprensión y la búsqueda de acuerdos. No decidimos quién tiene la razón. Las orientaciones son humanas, no generadas por inteligencia artificial.</p></section>`}
+function mission15(){return `<section class="card identity15"><small>NUESTRA IDENTIDAD</small><h2>Misión</h2><p>Conectar personas que necesitan orientación con personas capaces de brindar comprensión, acompañamiento y perspectivas constructivas, mediante una plataforma accesible, segura y humana.</p><h2>Visión</h2><p>Ser una empresa líder en Latinoamérica en orientación humana y bienestar interpersonal, demostrando que la tecnología puede fortalecer las relaciones humanas y generar un impacto social sostenible.</p><h2>Propósito</h2><p>Humanizar la manera en que nos ayudamos.</p><h2>Valores</h2><p>Humanidad · Empatía · Imparcialidad · Integridad · Confidencialidad · Accesibilidad · Innovación · Impacto social.</p><h2>Nuestra causa</h2><p>Una sociedad más empática, menos solitaria y con mayores oportunidades. Ayuda humana, oportunidades económicas e impacto social.</p><p><strong>La tecnología nos conecta. Las personas nos ayudan.</strong></p></section>`}
+const render15base=render;
+render=function(){
+  render15base();
+  if(page!=='story14')return;
+  const story = app.querySelector('.story9');
+  if(story)story.hidden=false;
+  const overview = identity15() + mission15();
+  const first = app.firstElementChild;
+  if(first)first.insertAdjacentHTML('afterend',overview);
+};
+render();
+// v1.6: browser-safe demo controls; previous application retained.
+function reset16(){if(!confirm('¿Borrar los datos ficticios de HUMANIA en este navegador?'))return;try{for(let i=localStorage.length-1;i>=0;i--){let k=localStorage.key(i);if(k&&k.startsWith('humania-'))localStorage.removeItem(k)}}catch(e){alert('El navegador no permite acceder al almacenamiento.');return}location.reload()}
+const render16base=render;render=function(){render16base();if(page==='account'){app.insertAdjacentHTML('beforeend','<div class="card"><h2>Datos de esta demostración</h2><p>Este dispositivo guarda únicamente los ejemplos que ingreses. No uses información real.</p><button class="wide light" onclick="reset16()">Borrar datos de prueba</button></div>')}document.querySelectorAll('#nav button').forEach(b=>{if(b.classList.contains('active'))b.setAttribute('aria-current','page')})};render();
+
+// 1.6.1: demo-only guards; no server-side authorization.
+const eligible161=eligible; eligible=function(p,c){return c.risk==='no'&&community.availability[people.indexOf(p)]!==false&&eligible161(p,c)};
+const create161=create; create=function(status){if(!verified10||draft.risk!=='no'||status!==(draft.mode==='compartida'?'Esperando segunda versión':'Listo para elegir'))return null;return create161(status)};
+const select161=selectAdvisor; selectAdvisor=function(){const c=current();if(!c||c.status!=='Listo para elegir'||(c.mode==='compartida'&&(!c.second||!c.consent)))return;select161()};
+const decline161=decline; decline=function(){const c=current();if(!c||c.risk!=='no')return;decline161()};
+const submit161=submitDemo; submitDemo=function(id){const c=cases.find(x=>x.id===id);if(!c||(c.mode==='compartida'&&(!c.second||!c.consent)))return;submit161(id)};
+const render161=render; render=function(){render161();if(page==='account14'){const a=document.getElementById('alias11');if(a&&a.tagName==='INPUT'){const sel=document.createElement('select');sel.id='alias11';sel.innerHTML=opts(['Mi perfil de prueba','Persona demo A','Persona demo B'],alias11);a.replaceWith(sel)}}};
+let cloudClient = null;
+let cloudCaseId = null;
+let cloudCase = null;
+let cloudInvitation = null;
+let cloudCases = [];
+let cloudView = '';
+let cloudVersion = 0;
+let cloudLoading = false;
+let cloudError = '';
+let guestToken = new URLSearchParams(location.hash.slice(1)).get('invitacion');
+if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(guestToken || '')) guestToken = null;
+let guestState = 'loading';
+let guestSafe = false;
+
+function resetCloudCases() {
+  cloudView = '';
+  cloudVersion++;
+  cloudCases = [];
+  cloudCase = null;
+  cloudInvitation = null;
+}
+
+function prepareCloudCases() {
+  const view = page === 'cases' ? 'list' : page === 'cloud-detail' ? 'detail:' + cloudCaseId : '';
+  if (view === cloudView) return;
+  cloudView = view;
+  const version = ++cloudVersion;
+  cloudCases = [];
+  cloudCase = null;
+  cloudInvitation = null;
+  cloudError = '';
+  cloudLoading = false;
+  if (!view || !supportUser || !cloudClient) return;
+  cloudLoading = true;
+  const uid = supportUser;
+  const caseId = cloudCaseId;
+  setTimeout(() => loadCloudCases(view, uid, caseId, version), 0);
+}
+
+async function loadCloudCases(view, uid, caseId, version) {
+  try {
+    let query = cloudClient.from('humania_cases').select('id,mode,category,topic,created_at').eq('owner_id',uid);
+    if (view === 'list') {
+      const {data,error} = await query.order('created_at',{ascending:false});
+      if (error) throw error;
+      if (version === cloudVersion) cloudCases = data || [];
+    } else {
+      const {data,error} = await query.eq('id',caseId).maybeSingle();
+      if (error || !data) throw error || Error();
+      if (version !== cloudVersion) return;
+      cloudCase = data;
+      if (data.mode === 'compartida') {
+        const result = await cloudClient.from('humania_invitations').select('token,case_id,expires_at,state').eq('case_id',caseId).maybeSingle();
+        if (result.error) throw result.error;
+        if (version === cloudVersion) cloudInvitation = result.data;
+      }
+    }
+  } catch (e) {
+    if (version === cloudVersion) cloudError = 'No se pudo cargar. Revisa tu conexión e intenta de nuevo.';
+  } finally {
+    if (version === cloudVersion) {
+      cloudLoading = false;
+      render();
+    }
+  }
+}
+
+function refreshCloudCases() {
+  cloudView = '';
+  render();
+}
+
+function openCloudCase(id) {
+  cloudCaseId = id;
+  go('cloud-detail');
+}
+
+async function createCloudCase(button) {
+  if (!verified10 || draft.risk !== 'no' || button.disabled) return;
+  if (!supportUser || !cloudClient) {
+    document.getElementById('cloud-create-status').textContent = 'Inicia sesión en Mi perfil y vuelve a crear el caso.';
+    return;
+  }
+  const uid = supportUser;
+  button.disabled = true;
+  const status = document.getElementById('cloud-create-status');
+  status.textContent = 'Guardando…';
+  try {
+    const {data,error} = await cloudClient.from('humania_cases').insert({mode:draft.mode,category:draft.category,topic:draft.topic}).select('id').single();
+    if (error) throw error;
+    if (supportUser !== uid || page !== 'confirm') return;
+    openCloudCase(data.id);
+  } catch (e) {
+    if (supportUser === uid && page === 'confirm') status.textContent = 'No se pudo confirmar la creación. Revisa Mis casos antes de reintentar.';
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function cloudGate() {
+  if (!supportAuthReady) return '<p>Comprobando sesión…</p>';
+  if (!supportUser) return '<p>Inicia sesión con tu cuenta de prueba para consultar tus casos.</p>'+btn('Ir a Mi perfil','account');
+  if (cloudLoading) return '<p>Cargando casos…</p>';
+  if (cloudError) return '<p role="status">'+esc(cloudError)+'</p><button class="wide light" onclick="refreshCloudCases()">Reintentar</button>';
+  return '';
+}
+
+function cloudCasesPage(legacy) {
+  const gate = cloudGate();
+  return '<h1>Mis casos</h1>' + (gate || `<p class="muted">Casos ficticios sincronizados con Supabase.</p>
+    <button class="wide light" onclick="refreshCloudCases()">Actualizar casos</button>
+    ${cloudCases.length ? cloudCases.map(c=>`<article class="card"><span class="pill">${esc(c.mode)}</span><h2>${esc(c.category)} · ${esc(c.topic)}</h2><button class="wide light" onclick="openCloudCase('${esc(c.id)}')">Abrir caso →</button></article>`).join('') : '<p>Todavía no tienes casos conectados.</p>'}`) +
+    btn('Crear un caso','help14') + `<details class="section14"><summary>Casos de prueba anteriores (locales)</summary>${legacy}</details>`;
+}
+
+async function makeCloudInvitation(button) {
+  if (!supportUser || !cloudCase || cloudCase.mode !== 'compartida' || button.disabled) return;
+  const version = cloudVersion;
+  button.disabled = true;
+  const status = document.getElementById('invite-status');
+  status.textContent = 'Generando…';
+  try {
+    const {data,error} = await cloudClient.from('humania_invitations').insert({case_id:cloudCase.id}).select('token,case_id,expires_at,state').single();
+    if (version !== cloudVersion) return;
+    if (error) throw error;
+    cloudInvitation = data;
+    render();
+  } catch (e) {
+    if (version === cloudVersion) status.textContent = 'No se pudo confirmar el enlace. Actualiza el caso antes de volver a intentarlo.';
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function cloudInviteLink() {
+  const url = new URL(location.href);
+  url.search = '';
+  url.hash = 'invitacion=' + cloudInvitation.token;
+  return url.href;
+}
+
+async function copyCloudInvitation() {
+  const field = document.getElementById('invite-link');
+  try {
+    await navigator.clipboard.writeText(field.value);
+    document.getElementById('invite-status').textContent = 'Enlace copiado.';
+  } catch (e) {
+    field.focus();field.select();
+    document.getElementById('invite-status').textContent = 'Mantén presionado el enlace para copiarlo.';
+  }
+}
+
+function cloudDetailPage() {
+  const head = back('cases') + '<h1>Seguimiento del caso</h1>';
+  const gate = cloudGate();
+  if (gate) return head + gate;
+  if (!cloudCase) return head;
+  let content = head+`<article class="card"><span class="pill">${esc(cloudCase.mode)}</span><h2>${esc(cloudCase.category)} · ${esc(cloudCase.topic)}</h2><p>Primera versión ficticia guardada.</p></article>`;
+  if (cloudCase.mode === 'individual') return content+'<p>Tu caso está guardado. La conexión con orientadores será parte de una prueba posterior.</p>';
+  if (!cloudInvitation) content += '<p>Invita a la otra persona mediante un enlace privado.</p><button class="wide" onclick="makeCloudInvitation(this)">Generar invitación privada</button>';
+  else if (cloudInvitation.state === 'submitted') content += '<div class="card"><span class="pill">Segunda versión recibida</span><p>Ambas versiones están registradas por separado. La conexión con orientadores está pendiente.</p></div>';
+  else if (cloudInvitation.state === 'closed') content += '<div class="card"><p>La invitación se cerró sin una segunda versión.</p></div>';
+  else if (Date.parse(cloudInvitation.expires_at) <= Date.now()) content += '<p>La invitación ya venció.</p>';
+  else content += `<div class="card"><span class="pill">Esperando segunda versión</span><p>Comparte este enlace solo con la persona invitada. Tiene vigencia de siete días.</p><label for="invite-link">Enlace privado</label><input id="invite-link" readonly value="${esc(cloudInviteLink())}"><button class="wide" onclick="copyCloudInvitation()">Copiar enlace</button></div>`;
+  return content+'<p id="invite-status" role="status"></p><button class="wide light" onclick="refreshCloudCases()">Actualizar seguimiento</button>';
+}
+
+async function loadGuestInvitation() {
+  if (!guestToken || !cloudClient) return;
+  guestState = 'loading';
+  render();
+  try {
+    const {data,error} = await cloudClient.rpc('humania_invitation_available',{p_token:guestToken});
+    if (error) throw error;
+    guestState = data ? 'ready' : 'unavailable';
+  } catch (e) {
+    guestState = 'error';
+  }
+  if (page === 'guest-invite') render();
+}
+
+async function submitGuestVersion(choice, button) {
+  if (guestState !== 'ready' || (choice !== 'decline' && !guestSafe) || button.disabled) return;
+  const status = document.getElementById('guest-status');
+  document.querySelectorAll('#guest-form button').forEach(b=>b.disabled=true);
+  status.textContent='Guardando…';
+  try {
+    const {data,error} = await cloudClient.rpc('humania_submit_version',{p_token:guestToken,p_choice:choice});
+    if (error) throw error;
+    guestState = data ? (choice === 'decline' ? 'closed' : 'submitted') : 'unavailable';
+    if (page === 'guest-invite') render();
+  } catch (e) {
+    status.textContent='No se pudo confirmar el envío. Actualiza la invitación antes de reintentar.';
+    document.querySelectorAll('#guest-form button').forEach(b=>b.disabled=false);
+  }
+}
+
+function leaveGuest() {
+  history.replaceState(null,'',location.pathname+location.search);
+  guestToken=null;
+  go('home');
+}
+
+function guestPage() {
+  const head = '<h1>Invitación privada</h1>';
+  const exit = '<button class="wide light" onclick="leaveGuest()">Ir a Inicio</button>';
+  if (guestState === 'loading') return head+'<p>Comprobando invitación…</p>'+exit;
+  if (guestState === 'error') return head+'<p>No se pudo comprobar la invitación.</p><button class="wide" onclick="loadGuestInvitation()">Reintentar</button>'+exit;
+  if (guestState === 'submitted') return head+'<p>Tu versión ficticia quedó registrada. Gracias por participar.</p>'+exit;
+  if (guestState === 'closed') return head+'<p>La invitación quedó cerrada.</p>'+exit;
+  if (guestState !== 'ready') return head+'<p>Esta invitación no está disponible o ya fue utilizada.</p>'+exit;
+  if (!guestSafe) return head+`<p>Alguien te invitó a participar en una prueba de orientación. Tu participación es voluntaria y tu versión se guarda por separado.</p>
+    <h2>¿Hay amenazas, agresiones o miedo a represalias?</h2>
+    <button class="wide" onclick="go('guest-protect')">Sí / No estoy seguro</button>
+    <button class="wide light" onclick="guestSafe=true;render()">No, continuar</button>
+    <div id="guest-form"><button class="wide light" onclick="submitGuestVersion('decline',this)">No participar</button><p id="guest-status" role="status"></p></div>`+exit;
+  return head+`<p>Elige una perspectiva ficticia para esta prueba. No compartas datos reales.</p>
+    <div id="guest-form" class="card">
+      <label for="guest-choice">Mi versión de prueba</label>
+      <select id="guest-choice"><option value="escuchado">Necesito ser escuchado</option><option value="perspectiva">Tengo otra perspectiva</option><option value="responsabilidades">Quiero acordar responsabilidades</option></select>
+      <button class="wide" onclick="submitGuestVersion(document.getElementById('guest-choice').value,this)">Enviar versión ficticia</button>
+      <button class="wide light" onclick="submitGuestVersion('decline',this)">No participar</button><p id="guest-status" role="status"></p>
+    </div>`+exit;
+}
+
+const accountAccess = document.getElementById('account-access');
+const renderWithDemoControls = render;
+render = function () {
+  prepareSupportView();
+  prepareCloudCases();
+  renderWithDemoControls();
+  if (page === 'cases') app.innerHTML = cloudCasesPage(app.innerHTML);
+  if (page === 'cloud-detail') app.innerHTML = cloudDetailPage();
+  if (page === 'guest-invite') app.innerHTML = guestPage();
+  if (page === 'guest-protect') app.innerHTML = violenceHelp(false).replace("go('home')","leaveGuest()");
+  document.getElementById('nav').hidden = page === 'guest-invite' || page === 'guest-protect';
+  accountAccess.hidden = page !== 'account';
+};
+if (guestToken) page = 'guest-invite';
+render();
+</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>(function(){
+const panel=document.getElementById('auth17'), status=document.getElementById('authstatus17'), form=document.getElementById('authform17'), logout=document.getElementById('logout17');
+const say=t=>{status.textContent=t};
+if(!window.supabase){say('No se pudo cargar el servicio de cuentas. Recarga la página.');supportSessionChanged(null,null);if(guestToken){guestState='error';render()}return;}
+const client=window.supabase.createClient('https://crxxmriexbgrgnwnmoqe.supabase.co','sb_publishable_rbIqdDIMID56mVg0SdfUpg_QISt5AkB');
+cloudClient = client;
+if (guestToken) loadGuestInvitation();
+const profile=document.createElement('form');profile.hidden=true;profile.innerHTML='<h2>Mi perfil de prueba</h2><label for="name18">Nombre ficticio</label><input id="name18" maxlength="80" required><label for="country18">País</label><input id="country18" maxlength="80" required><button type="submit" class="wide">Guardar perfil</button><p role="status" aria-live="polite"></p>';panel.append(profile);
+const name18=profile.querySelector('#name18'), country18=profile.querySelector('#country18'), msg=profile.querySelector('p'), save=profile.querySelector('button');let owner=null, generation=0;
+async function load18(uid,version){save.disabled=true;msg.textContent='Cargando perfil…';try{const {data,error}=await client.from('profiles').select('display_name,country').eq('id',uid).maybeSingle();if(version!==generation)return;if(error)throw error;name18.value=data?.display_name||'';country18.value=data?.country||'';msg.textContent=data?'Perfil recuperado.':'Completa tu perfil de prueba.';save.disabled=false;}catch(e){if(version===generation)msg.textContent='No se pudo cargar el perfil. Recarga para reintentar.';}}
+profile.addEventListener('submit',async e=>{e.preventDefault();const uid=owner,version=generation;if(!uid||save.disabled)return;const display_name=name18.value.trim(),country=country18.value.trim();if(!display_name||!country)return;save.disabled=true;msg.textContent='Guardando…';try{const {error}=await client.from('profiles').upsert({id:uid,display_name,country},{onConflict:'id'});if(error)throw error;if(version===generation)msg.textContent='Perfil guardado en Supabase.';}catch(e){if(version===generation)msg.textContent='No se pudo guardar el perfil: '+(e.message||'Error de conexión');}finally{if(version===generation)save.disabled=false;}});
+function show(session){supportSessionChanged(client,session);const uid=session?.user?.id||null;if(uid!==owner){owner=uid;generation++;name18.value='';country18.value='';msg.textContent='';if(uid){const v=generation;setTimeout(()=>{if(v===generation)load18(uid,v)},0);}}profile.hidden=!uid;form.hidden=!!session;logout.hidden=!session;say(session?'Sesión de prueba iniciada. Los casos siguen siendo ficticios y locales.':'Sin sesión iniciada.');}
+client.auth.onAuthStateChange((_event,session)=>show(session));
+client.auth.getSession().then(({data,error})=>error?(say('No se pudo recuperar la sesión.'),supportSessionChanged(client,null)):show(data.session)).catch(()=>{say('No se pudo conectar.');supportSessionChanged(client,null);});
+form.addEventListener('submit',async e=>{e.preventDefault();const mode=e.submitter&&e.submitter.value;const email=form.elements.email.value.trim(),password=form.elements.password.value;const buttons=form.querySelectorAll('button');buttons.forEach(b=>b.disabled=true);say('Conectando…');try{const result=mode==='signup'?await client.auth.signUp({email,password,options:{emailRedirectTo:'https://humania-latam.github.io/'}}):await client.auth.signInWithPassword({email,password});if(result.error){say('No se completó la operación: '+result.error.message);return;}form.elements.password.value='';if(result.data.session)show(result.data.session);else say('Revisa tu correo para confirmar la cuenta. Si no llega, revisa spam y la configuración de correo de Supabase.');}catch(e){say('Error de conexión. Intenta nuevamente.');}finally{buttons.forEach(b=>b.disabled=false);}});
+logout.addEventListener('click',async()=>{logout.disabled=true;try{const {error}=await client.auth.signOut();if(error)say('No se pudo cerrar la sesión.');else show(null);}catch(e){say('Error de conexión.');}finally{logout.disabled=false;}});
+})();
+</script></html>
